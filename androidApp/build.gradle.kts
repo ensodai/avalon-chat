@@ -91,8 +91,11 @@ if (keystorePropertiesFile.exists()) {
     keystoreProperties.load(keystorePropertiesFile.inputStream())
 }
 
-val hasReleaseKeystore = listOf("storeFile", "storePassword", "keyAlias", "keyPassword")
-    .all { !keystoreProperties.getProperty(it).isNullOrBlank() }
+val releaseStoreFile = keystoreProperties["storeFile"]?.toString()?.let { rootProject.file(it) }
+val hasReleaseKeystore = releaseStoreFile != null &&
+    releaseStoreFile.exists() &&
+    listOf("storePassword", "keyAlias", "keyPassword")
+        .all { !keystoreProperties.getProperty(it).isNullOrBlank() }
 
 abstract class SyncComposeResourcesTask : Sync() {
     @get:OutputDirectory

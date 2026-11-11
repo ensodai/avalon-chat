@@ -51,9 +51,10 @@ jobs:
         run: |
           if [ -n "$KEYSTORE_BASE64" ]; then
             echo "🔑 Decoding release keystore from secrets..."
+            echo "$KEYSTORE_BASE64" | base64 -d > avalon-release.jks
             printf "storeFile=avalon-release.jks\nstorePassword=%s\nkeyAlias=%s\nkeyPassword=%s\n" \
               "$KEYSTORE_PASSWORD" "$KEY_ALIAS" "$KEY_PASSWORD" > keystore.properties
-            echo "✅ keystore.properties configured for production signing."
+            echo "✅ keystore.properties and avalon-release.jks configured for production signing."
           else
             echo "ℹ️ KEYSTORE_BASE64 secret not detected. Using fallback signing for APK."
           fi
