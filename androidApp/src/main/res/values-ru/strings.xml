@@ -1,0 +1,6 @@
+<resources>
+    <!-- Crash Screen -->
+    <string name="crash_title">Приложение столкнулось с ошибкой</string>
+    <string name="crash_description">Можно очистить локальные данные и перезапустить приложение.</string>
+    <string name="crash_button_fix_and_restart">Исправить и перезапустить</string>
+</resources>

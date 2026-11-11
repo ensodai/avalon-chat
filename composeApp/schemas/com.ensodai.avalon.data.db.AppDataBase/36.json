@@ -1,0 +1,1652 @@
+{
+  "formatVersion": 1,
+  "database": {
+    "version": 36,
+    "identityHash": "93d14bc0673467b515700736c08c850f",
+    "entities": [
+      {
+        "tableName": "app_settings",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER NOT NULL, `auto_replace_api_keys` INTEGER NOT NULL, `local_mode` INTEGER NOT NULL, `language` TEXT NOT NULL, `is_safety_reminder_accepted` INTEGER NOT NULL, `flow_mode` INTEGER NOT NULL, `theme_id` TEXT NOT NULL, `user_bubble_fill_type` TEXT NOT NULL, `custom_user_bubble_color` TEXT, `user_bubble_gradient_start_color` TEXT, `user_bubble_gradient_end_color` TEXT, `bot_bubble_fill_type` TEXT NOT NULL, `custom_bot_bubble_color` TEXT, `bot_bubble_gradient_start_color` TEXT, `bot_bubble_gradient_end_color` TEXT, `chat_background_type` TEXT NOT NULL, `chat_background_color` TEXT, `chat_background_url` TEXT, `chat_background_pattern_id` TEXT, `chat_background_blur` INTEGER NOT NULL, `chat_background_dim_amount` REAL NOT NULL, `bubble_font_size` INTEGER NOT NULL, `bubble_shape_type` TEXT NOT NULL, `bubble_corner_radius` INTEGER NOT NULL, `show_ai_warning` INTEGER NOT NULL, `chat_roleplay_preset` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "autoReplaceAPIKeys",
+            "columnName": "auto_replace_api_keys",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "localMode",
+            "columnName": "local_mode",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "language",
+            "columnName": "language",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isSafetyReminderAccepted",
+            "columnName": "is_safety_reminder_accepted",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "flowMode",
+            "columnName": "flow_mode",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "themePreset",
+            "columnName": "theme_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "userBubbleFillType",
+            "columnName": "user_bubble_fill_type",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "userBubbleSolidColor",
+            "columnName": "custom_user_bubble_color",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "userBubbleGradientStartColor",
+            "columnName": "user_bubble_gradient_start_color",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "userBubbleGradientEndColor",
+            "columnName": "user_bubble_gradient_end_color",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "botBubbleFillType",
+            "columnName": "bot_bubble_fill_type",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "botBubbleSolidColor",
+            "columnName": "custom_bot_bubble_color",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "botBubbleGradientStartColor",
+            "columnName": "bot_bubble_gradient_start_color",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "botBubbleGradientEndColor",
+            "columnName": "bot_bubble_gradient_end_color",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "chatBackgroundType",
+            "columnName": "chat_background_type",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "chatBackgroundColor",
+            "columnName": "chat_background_color",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "chatBackgroundUrl",
+            "columnName": "chat_background_url",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "chatBackgroundPatternPreset",
+            "columnName": "chat_background_pattern_id",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "chatBackgroundBlur",
+            "columnName": "chat_background_blur",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "chatBackgroundDimAmount",
+            "columnName": "chat_background_dim_amount",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bubbleFontSize",
+            "columnName": "bubble_font_size",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bubbleShapeType",
+            "columnName": "bubble_shape_type",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "bubbleCornerRadius",
+            "columnName": "bubble_corner_radius",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "showAiWarning",
+            "columnName": "show_ai_warning",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "chatRoleplayPreset",
+            "columnName": "chat_roleplay_preset",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "character_entity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `is_public_full_description` INTEGER NOT NULL, `visibility` TEXT NOT NULL, `owner_nick` TEXT NOT NULL, `name` TEXT NOT NULL, `short_description` TEXT NOT NULL, `full_description` TEXT, `first_message` TEXT, `can_edit` INTEGER NOT NULL, `updated_at` TEXT NOT NULL, `temperature` REAL NOT NULL, `unclaimed_energy` REAL, `total_earned_energy` REAL, `is_outreach_enabled` INTEGER NOT NULL, `voice` TEXT NOT NULL, `relationship_level` INTEGER NOT NULL, `experience_points` INTEGER NOT NULL, `events_count` INTEGER NOT NULL, `interaction_format` TEXT NOT NULL, `scenario` TEXT, `mes_example` TEXT, `sync_state` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isPublicFullDescription",
+            "columnName": "is_public_full_description",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "visibility",
+            "columnName": "visibility",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "ownerNick",
+            "columnName": "owner_nick",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "shortDescription",
+            "columnName": "short_description",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fullDescription",
+            "columnName": "full_description",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "firstMessage",
+            "columnName": "first_message",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "canEdit",
+            "columnName": "can_edit",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "updatedAt",
+            "columnName": "updated_at",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "temperature",
+            "columnName": "temperature",
+            "affinity": "REAL",
+            "notNull": true
+          },
+          {
+            "fieldPath": "unclaimedEnergy",
+            "columnName": "unclaimed_energy",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "totalEarnedEnergy",
+            "columnName": "total_earned_energy",
+            "affinity": "REAL"
+          },
+          {
+            "fieldPath": "isOutreachEnabled",
+            "columnName": "is_outreach_enabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "voice",
+            "columnName": "voice",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "relationshipLevel",
+            "columnName": "relationship_level",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "experiencePoints",
+            "columnName": "experience_points",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "eventsCount",
+            "columnName": "events_count",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "interactionFormat",
+            "columnName": "interaction_format",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "scenario",
+            "columnName": "scenario",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "mesExample",
+            "columnName": "mes_example",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "syncAction",
+            "columnName": "sync_state",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "character_image_entity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `character_id` TEXT NOT NULL, `image_url` TEXT, `thumb_hash` TEXT, `is_private` INTEGER NOT NULL, `energy_cost` INTEGER NOT NULL, `required_level` INTEGER, `is_unlocked` INTEGER NOT NULL, PRIMARY KEY(`id`), FOREIGN KEY(`character_id`) REFERENCES `character_entity`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "characterId",
+            "columnName": "character_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "imageUrl",
+            "columnName": "image_url",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "thumbHash",
+            "columnName": "thumb_hash",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "isPrivate",
+            "columnName": "is_private",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "energyCost",
+            "columnName": "energy_cost",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "requiredLevel",
+            "columnName": "required_level",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "isUnlocked",
+            "columnName": "is_unlocked",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_character_image_entity_character_id",
+            "unique": false,
+            "columnNames": [
+              "character_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_character_image_entity_character_id` ON `${TABLE_NAME}` (`character_id`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "character_entity",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "character_id"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "chat_session_entity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `character_id` TEXT NOT NULL, `created_at` TEXT NOT NULL, `updated_at` TEXT, `is_archived` INTEGER NOT NULL, `sync_state` TEXT NOT NULL, `active_chat_variant_id` TEXT, `last_message_content` TEXT, `last_message_type` TEXT, `last_message_role` TEXT, `last_message_time` TEXT, `selected_llm_config_code_name` TEXT, `draft_message` TEXT, PRIMARY KEY(`id`), FOREIGN KEY(`character_id`) REFERENCES `character_entity`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE , FOREIGN KEY(`active_chat_variant_id`) REFERENCES `chat_variant_entity`(`id`) ON UPDATE NO ACTION ON DELETE SET NULL )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "characterId",
+            "columnName": "character_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createdAt",
+            "columnName": "created_at",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "updatedAt",
+            "columnName": "updated_at",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "isArchived",
+            "columnName": "is_archived",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "syncAction",
+            "columnName": "sync_state",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "activeChatVariantId",
+            "columnName": "active_chat_variant_id",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "lastMessageContent",
+            "columnName": "last_message_content",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "lastMessageType",
+            "columnName": "last_message_type",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "lastMessageRole",
+            "columnName": "last_message_role",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "lastMessageTime",
+            "columnName": "last_message_time",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "selectedLlmConfigCodeName",
+            "columnName": "selected_llm_config_code_name",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "draftMessage",
+            "columnName": "draft_message",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_chat_session_entity_character_id",
+            "unique": true,
+            "columnNames": [
+              "character_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE UNIQUE INDEX IF NOT EXISTS `index_chat_session_entity_character_id` ON `${TABLE_NAME}` (`character_id`)"
+          },
+          {
+            "name": "index_chat_session_entity_active_chat_variant_id",
+            "unique": false,
+            "columnNames": [
+              "active_chat_variant_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_chat_session_entity_active_chat_variant_id` ON `${TABLE_NAME}` (`active_chat_variant_id`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "character_entity",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "character_id"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          },
+          {
+            "table": "chat_variant_entity",
+            "onDelete": "SET NULL",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "active_chat_variant_id"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "categories",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER, `category_code` TEXT NOT NULL, `localized_name` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "categoryCode",
+            "columnName": "category_code",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "localizedName",
+            "columnName": "localized_name",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "character_avatar_entity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `character_id` TEXT NOT NULL, `image_url` TEXT, `thumb_hash` TEXT, PRIMARY KEY(`id`), FOREIGN KEY(`character_id`) REFERENCES `character_entity`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "characterId",
+            "columnName": "character_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "imageUrl",
+            "columnName": "image_url",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "thumbHash",
+            "columnName": "thumb_hash",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_character_avatar_entity_character_id",
+            "unique": false,
+            "columnNames": [
+              "character_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_character_avatar_entity_character_id` ON `${TABLE_NAME}` (`character_id`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "character_entity",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "character_id"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "user",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `name` TEXT NOT NULL, `avatar_url` TEXT, `nickname` TEXT NOT NULL, `current_quota` INTEGER NOT NULL, `max_quota` INTEGER NOT NULL, `reserve_balance` INTEGER NOT NULL, `max_reserve_balance` INTEGER NOT NULL, `premium_status` TEXT NOT NULL, `default_persona_id` TEXT, `payment_provider` TEXT, `next_billing_date` TEXT, `is_outreach_enabled` INTEGER NOT NULL, `daily_outreach_limit` INTEGER NOT NULL, `is_flow_mode_enabled` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "avatarUrl",
+            "columnName": "avatar_url",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "nickname",
+            "columnName": "nickname",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "currentQuota",
+            "columnName": "current_quota",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "maxQuota",
+            "columnName": "max_quota",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "reserveBalance",
+            "columnName": "reserve_balance",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "maxReserveBalance",
+            "columnName": "max_reserve_balance",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "premiumStatus",
+            "columnName": "premium_status",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "defaultPersonaId",
+            "columnName": "default_persona_id",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "paymentProvider",
+            "columnName": "payment_provider",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "nextBillingDate",
+            "columnName": "next_billing_date",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "isOutreachEnabled",
+            "columnName": "is_outreach_enabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "dailyOutreachLimit",
+            "columnName": "daily_outreach_limit",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isFlowModeEnabled",
+            "columnName": "is_flow_mode_enabled",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "persona",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `name` TEXT NOT NULL, `description` TEXT NOT NULL, `created_at` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createdAt",
+            "columnName": "created_at",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "show_promo_flags_entity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `telegramReminder` INTEGER NOT NULL, `openApiTransitionAnnouncement` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "telegramReminder",
+            "columnName": "telegramReminder",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "openApiTransitionAnnouncement",
+            "columnName": "openApiTransitionAnnouncement",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "main_rules",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, `main_rules` TEXT NOT NULL, `default_gemini_model` TEXT NOT NULL, `max_output_tokens` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "mainRules",
+            "columnName": "main_rules",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "defaultGeminiModel",
+            "columnName": "default_gemini_model",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "maxOutputTokens",
+            "columnName": "max_output_tokens",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "chat_variant_entity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `sync_state` TEXT NOT NULL, `chat_session_id` TEXT NOT NULL, `name` TEXT NOT NULL, `unread_count` INTEGER NOT NULL, `created_at` TEXT NOT NULL, `updated_at` TEXT NOT NULL, PRIMARY KEY(`id`), FOREIGN KEY(`chat_session_id`) REFERENCES `chat_session_entity`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "syncAction",
+            "columnName": "sync_state",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "chatSessionId",
+            "columnName": "chat_session_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "unreadCount",
+            "columnName": "unread_count",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createdAt",
+            "columnName": "created_at",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "updatedAt",
+            "columnName": "updated_at",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_chat_variant_entity_chat_session_id",
+            "unique": false,
+            "columnNames": [
+              "chat_session_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_chat_variant_entity_chat_session_id` ON `${TABLE_NAME}` (`chat_session_id`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "chat_session_entity",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "chat_session_id"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "chat_variant_image",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `chat_variant_id` TEXT NOT NULL, `image_url` TEXT NOT NULL, `thumb_hash` TEXT, PRIMARY KEY(`id`), FOREIGN KEY(`chat_variant_id`) REFERENCES `chat_variant_entity`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "chatVariantId",
+            "columnName": "chat_variant_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "imageUrl",
+            "columnName": "image_url",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "thumbHash",
+            "columnName": "thumb_hash",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_chat_variant_image_chat_variant_id",
+            "unique": false,
+            "columnNames": [
+              "chat_variant_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_chat_variant_image_chat_variant_id` ON `${TABLE_NAME}` (`chat_variant_id`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "chat_variant_entity",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "chat_variant_id"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "server_categories",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` INTEGER PRIMARY KEY AUTOINCREMENT, `category_code` TEXT NOT NULL, `localized_name` TEXT NOT NULL, `count` INTEGER NOT NULL)",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "categoryCode",
+            "columnName": "category_code",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "localizedName",
+            "columnName": "localized_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "count",
+            "columnName": "count",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": true,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_server_categories_category_code",
+            "unique": true,
+            "columnNames": [
+              "category_code"
+            ],
+            "orders": [],
+            "createSql": "CREATE UNIQUE INDEX IF NOT EXISTS `index_server_categories_category_code` ON `${TABLE_NAME}` (`category_code`)"
+          }
+        ]
+      },
+      {
+        "tableName": "welcome_card_image_entity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `character_id` TEXT NOT NULL, `image_url` TEXT NOT NULL, `thumb_hash` TEXT, PRIMARY KEY(`id`), FOREIGN KEY(`character_id`) REFERENCES `character_entity`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "characterId",
+            "columnName": "character_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "imageUrl",
+            "columnName": "image_url",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "thumbHash",
+            "columnName": "thumb_hash",
+            "affinity": "TEXT"
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_welcome_card_image_entity_character_id",
+            "unique": false,
+            "columnNames": [
+              "character_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_welcome_card_image_entity_character_id` ON `${TABLE_NAME}` (`character_id`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "character_entity",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "character_id"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "welcome_card_entity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `character_id` TEXT NOT NULL, `description` TEXT, `color_start` TEXT NOT NULL, `color_end` TEXT NOT NULL, `color_light` TEXT NOT NULL, `is_enable_light` INTEGER NOT NULL, PRIMARY KEY(`id`), FOREIGN KEY(`character_id`) REFERENCES `character_entity`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "characterId",
+            "columnName": "character_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "colorStart",
+            "columnName": "color_start",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "colorEnd",
+            "columnName": "color_end",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "colorLight",
+            "columnName": "color_light",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isEnableLight",
+            "columnName": "is_enable_light",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_welcome_card_entity_character_id",
+            "unique": false,
+            "columnNames": [
+              "character_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_welcome_card_entity_character_id` ON `${TABLE_NAME}` (`character_id`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "character_entity",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "character_id"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "message_slots",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `sync_action` TEXT NOT NULL, `chat_variant_id` TEXT NOT NULL, `active_container_id` TEXT, `created_at` TEXT NOT NULL, `updated_at` TEXT NOT NULL, PRIMARY KEY(`id`), FOREIGN KEY(`chat_variant_id`) REFERENCES `chat_variant_entity`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "syncAction",
+            "columnName": "sync_action",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "chatVariantId",
+            "columnName": "chat_variant_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "activeContainerId",
+            "columnName": "active_container_id",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "createdAt",
+            "columnName": "created_at",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "updatedAt",
+            "columnName": "updated_at",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_message_slots_chat_variant_id",
+            "unique": false,
+            "columnNames": [
+              "chat_variant_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_message_slots_chat_variant_id` ON `${TABLE_NAME}` (`chat_variant_id`)"
+          },
+          {
+            "name": "index_message_slots_created_at",
+            "unique": false,
+            "columnNames": [
+              "created_at"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_message_slots_created_at` ON `${TABLE_NAME}` (`created_at`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "chat_variant_entity",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "chat_variant_id"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "message_containers",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `slot_id` TEXT NOT NULL, `role` TEXT NOT NULL, `rarity` TEXT NOT NULL, `status` TEXT NOT NULL, `sync_action` TEXT NOT NULL, `user_reaction` TEXT, `character_reaction` TEXT, `is_read` INTEGER NOT NULL, `show_outreach_feedback` INTEGER NOT NULL, `created_at` TEXT NOT NULL, `updated_at` TEXT NOT NULL, PRIMARY KEY(`id`), FOREIGN KEY(`slot_id`) REFERENCES `message_slots`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "slotId",
+            "columnName": "slot_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "role",
+            "columnName": "role",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rarity",
+            "columnName": "rarity",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "status",
+            "columnName": "status",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "syncAction",
+            "columnName": "sync_action",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "userReaction",
+            "columnName": "user_reaction",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "characterReaction",
+            "columnName": "character_reaction",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "isRead",
+            "columnName": "is_read",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "showOutreachFeedback",
+            "columnName": "show_outreach_feedback",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "createdAt",
+            "columnName": "created_at",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "updatedAt",
+            "columnName": "updated_at",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_message_containers_slot_id",
+            "unique": false,
+            "columnNames": [
+              "slot_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_message_containers_slot_id` ON `${TABLE_NAME}` (`slot_id`)"
+          },
+          {
+            "name": "index_message_containers_status",
+            "unique": false,
+            "columnNames": [
+              "status"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_message_containers_status` ON `${TABLE_NAME}` (`status`)"
+          },
+          {
+            "name": "index_message_containers_sync_action",
+            "unique": false,
+            "columnNames": [
+              "sync_action"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_message_containers_sync_action` ON `${TABLE_NAME}` (`sync_action`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "message_slots",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "slot_id"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "message_contents",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `container_id` TEXT NOT NULL, `avalon_message_content_type` TEXT NOT NULL, `content` TEXT NOT NULL, `order_index` INTEGER NOT NULL, PRIMARY KEY(`id`), FOREIGN KEY(`container_id`) REFERENCES `message_containers`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "containerId",
+            "columnName": "container_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "type",
+            "columnName": "avalon_message_content_type",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "content",
+            "columnName": "content",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "orderIndex",
+            "columnName": "order_index",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        },
+        "indices": [
+          {
+            "name": "index_message_contents_container_id",
+            "unique": false,
+            "columnNames": [
+              "container_id"
+            ],
+            "orders": [],
+            "createSql": "CREATE INDEX IF NOT EXISTS `index_message_contents_container_id` ON `${TABLE_NAME}` (`container_id`)"
+          }
+        ],
+        "foreignKeys": [
+          {
+            "table": "message_containers",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "container_id"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      },
+      {
+        "tableName": "llm_configs",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`code_name` TEXT NOT NULL, `display_name` TEXT NOT NULL, `price` INTEGER NOT NULL, PRIMARY KEY(`code_name`))",
+        "fields": [
+          {
+            "fieldPath": "codeName",
+            "columnName": "code_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "displayName",
+            "columnName": "display_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "price",
+            "columnName": "price",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "code_name"
+          ]
+        }
+      },
+      {
+        "tableName": "gift_packs",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `authorId` TEXT, `name` TEXT NOT NULL, `description` TEXT, `coverUrl` TEXT NOT NULL, `isPublic` INTEGER NOT NULL, `price` INTEGER NOT NULL, `isOwned` INTEGER NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "authorId",
+            "columnName": "authorId",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "name",
+            "columnName": "name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "description",
+            "columnName": "description",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "coverUrl",
+            "columnName": "coverUrl",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isPublic",
+            "columnName": "isPublic",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "price",
+            "columnName": "price",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isOwned",
+            "columnName": "isOwned",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "gift_items",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `pack_id` TEXT NOT NULL, `file_url` TEXT NOT NULL, `price` INTEGER NOT NULL, `action_type` TEXT NOT NULL, `gift_name` TEXT NOT NULL, `gift_description` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "packId",
+            "columnName": "pack_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "fileUrl",
+            "columnName": "file_url",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "price",
+            "columnName": "price",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "actionType",
+            "columnName": "action_type",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "giftName",
+            "columnName": "gift_name",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "giftDescription",
+            "columnName": "gift_description",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "chat_background_images",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`id` TEXT NOT NULL, `url` TEXT NOT NULL, PRIMARY KEY(`id`))",
+        "fields": [
+          {
+            "fieldPath": "id",
+            "columnName": "id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "url",
+            "columnName": "url",
+            "affinity": "TEXT",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "id"
+          ]
+        }
+      },
+      {
+        "tableName": "character_event_roadmap_entity",
+        "createSql": "CREATE TABLE IF NOT EXISTS `${TABLE_NAME}` (`character_id` TEXT NOT NULL, `level` INTEGER NOT NULL, `has_reward` INTEGER NOT NULL, `is_unlocked` INTEGER NOT NULL, `trigger_scenario` TEXT, `reward_photo_id` TEXT, `reward_photo_url` TEXT, `reward_photo_thumb_hash` TEXT, `reward_photo_is_private` INTEGER NOT NULL, `reward_photo_energy_cost` INTEGER NOT NULL, `reward_photo_required_level` INTEGER, `reward_photo_is_unlocked` INTEGER NOT NULL, PRIMARY KEY(`character_id`, `level`), FOREIGN KEY(`character_id`) REFERENCES `character_entity`(`id`) ON UPDATE NO ACTION ON DELETE CASCADE )",
+        "fields": [
+          {
+            "fieldPath": "characterId",
+            "columnName": "character_id",
+            "affinity": "TEXT",
+            "notNull": true
+          },
+          {
+            "fieldPath": "level",
+            "columnName": "level",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "hasReward",
+            "columnName": "has_reward",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "isUnlocked",
+            "columnName": "is_unlocked",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "triggerScenario",
+            "columnName": "trigger_scenario",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "rewardPhotoId",
+            "columnName": "reward_photo_id",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "rewardPhotoUrl",
+            "columnName": "reward_photo_url",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "rewardPhotoThumbHash",
+            "columnName": "reward_photo_thumb_hash",
+            "affinity": "TEXT"
+          },
+          {
+            "fieldPath": "rewardPhotoIsPrivate",
+            "columnName": "reward_photo_is_private",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rewardPhotoEnergyCost",
+            "columnName": "reward_photo_energy_cost",
+            "affinity": "INTEGER",
+            "notNull": true
+          },
+          {
+            "fieldPath": "rewardPhotoRequiredLevel",
+            "columnName": "reward_photo_required_level",
+            "affinity": "INTEGER"
+          },
+          {
+            "fieldPath": "rewardPhotoIsUnlocked",
+            "columnName": "reward_photo_is_unlocked",
+            "affinity": "INTEGER",
+            "notNull": true
+          }
+        ],
+        "primaryKey": {
+          "autoGenerate": false,
+          "columnNames": [
+            "character_id",
+            "level"
+          ]
+        },
+        "foreignKeys": [
+          {
+            "table": "character_entity",
+            "onDelete": "CASCADE",
+            "onUpdate": "NO ACTION",
+            "columns": [
+              "character_id"
+            ],
+            "referencedColumns": [
+              "id"
+            ]
+          }
+        ]
+      }
+    ],
+    "setupQueries": [
+      "CREATE TABLE IF NOT EXISTS room_master_table (id INTEGER PRIMARY KEY,identity_hash TEXT)",
+      "INSERT OR REPLACE INTO room_master_table (id,identity_hash) VALUES(42, '93d14bc0673467b515700736c08c850f')"
+    ]
+  }
+}

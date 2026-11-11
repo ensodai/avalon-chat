@@ -1,0 +1,58 @@
+services:
+  # ── PostgreSQL Database (17+) ──
+  db:
+    image: postgres:17-alpine
+    container_name: avalon-postgres
+    restart: always
+    environment:
+      POSTGRES_DB: ${DB_NAME:-avalon_chat}
+      POSTGRES_USER: ${DB_USER:-postgres}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-postgres}
+    ports:
+      - "${DB_PORT:-5432}:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER:-postgres} -d ${DB_NAME:-avalon_chat}"]
+      interval: 5s
+      timeout: 5s
+      retries: 5
+
+  # ── Redis Cache ──
+  redis:
+    image: redis:7-alpine
+    container_name: avalon-redis
+    restart: always
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes
+
+  # ── Avalon Chat Backend ──
+  server:
+    build:
+      context: .
+      dockerfile: server/Dockerfile
+    container_name: avalon-server
+    restart: always
+    depends_on:
+      db:
+        condition: service_healthy
+      redis:
+        condition: service_started
+    ports:
+      - "${PORT:-8080}:8080"
+    env_file:
+      - path: .env
+        required: false
+    environment:
+      - DB_HOST=db
+      - DB_PORT=5432
+      - REDIS_URL=redis://redis:6379
+    volumes:
+      - ./server/uploads:/app/uploads
+
+volumes:
+  postgres_data:
+  redis_data:

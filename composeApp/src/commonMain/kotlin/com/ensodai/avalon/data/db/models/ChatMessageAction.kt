@@ -1,0 +1,15 @@
+package com.ensodai.avalon.data.db.models
+
+enum class ChatMessageAction {
+    REQUEST_AUTHORIZATION,
+    QUOTA_LIMIT,
+    SUCCESS_AUTHORIZATION,
+    BAD_AUTHORIZATION,
+    DAILY_LIMIT_EXCEEDED,
+    API_KEYS_ARE_OUT,
+
+    GET_SYSTEM_API_KEY_FAIL,
+    GUIDE_GET_API_KEY_1,
+    GUIDE_GET_API_KEY_2,
+    UPGRADE_REQUIRED
+}

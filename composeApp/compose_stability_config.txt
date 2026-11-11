@@ -1,0 +1,8 @@
+// Конфигурационный файл стабильности Compose Compiler
+// Типы из этих пакетов будут считаться стабильными (Stable) для оптимизации рекомпозиции
+
+com.ensodai.shared.avalon.chat.models.**
+com.ensodai.shared.avalon.gifts.models.**
+com.ensodai.avalon.domain.models.**
+com.ensodai.avalon.domain.models.message.**
+com.ensodai.avalon.data.db.dto.**

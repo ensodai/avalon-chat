@@ -1,0 +1,1029 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Avalon avatars</string>
+    <string name="delete_api_key">Удалить api ключ?</string>
+    <string name="settings">Настройки</string>
+    <string name="flow_mode">FlowMode</string>
+    <string name="auto_replace_api_keys">Автозамена api ключей</string>
+    <string name="language">Язык</string>
+    <string name="add">Добавить</string>
+    <string name="cancel">Отмена</string>
+    <string name="cancel_big">ОТМЕНА</string>
+    <string name="api_keys">Api ключи</string>
+    <string name="ok">Ок</string>
+    <string name="delete_selected_chats">Удалить выбранные чаты</string>
+    <string name="no_messages_yet">Сообщений пока нет</string>
+    <string name="chats">Чаты</string>
+    <string name="edit_chat">Редактировать</string>
+    <string name="create_chat">Создать чат</string>
+    <string name="safety_settings">Настройки цензуры</string>
+    <string name="harassment">Харассмент</string>
+    <string name="hate">Ненависть</string>
+    <string name="sexually_explicit">Sexually Explicit</string>
+    <string name="dangerous_content">Опасный контент</string>
+    <string name="block_none">Не блокировать</string>
+    <string name="block_few">Блокировать немного</string>
+    <string name="block_some">Блокировать частично</string>
+    <string name="block_most">Блокировать большинство</string>
+    <string name="show_always">Всегда показывать, даже если может навредить</string>
+    <string name="block_high">Блокировать только то, что точно вредно</string>
+    <string name="block_medium_high">Блокировать, если есть средняя или высокая вероятность вреда</string>
+    <string name="block_low_medium_high">Блокировать всё, что может быть вредным</string>
+    <string name="auto_delete_messages">Автоудаление сообщений</string>
+    <string name="temperature">Температура</string>
+    <string name="model">Модель</string>
+    <string name="instructions">Инструкции</string>
+    <string name="name">Имя</string>
+    <string name="safety_setting_reminder">Напоминание о настройках безопасности</string>
+    <string name="google_message">Это сообщение написано в гугл ai studio</string>
+    <string name="terms_agreement">
+    \"В соответствии с нашими [Условиями](https://ai.google.dev/gemini-api/terms) вы соглашаетесь соблюдать применимое законодательство и нашу [Политику использования](https://policies.google.com/terms/generative-ai/use-policy). Вы по-прежнему несете ответственность за соблюдение этих требований, если вы снижаете или отключаете защитные фильтры. Делайте это только в том случае, если ваш предполагаемый вариант использования является подходящим и разумно и последовательно требует снижения или отключения этих защитных фильтров, поскольку может возникнуть нежелательный контент. [Узнать больше](https://ai.google.dev/gemini-api/docs/safety-settings)\"
+    </string>
+    <string name="learn_more">Узнать больше</string>
+    <string name="terms">Условия</string>
+    <string name="use_policy">Политика использования</string>
+    <string name="turn_filters_off">Отключить фильтры</string>
+    <string name="keep_filters">Оставить фильтры</string>
+    <string name="advanced_settings">Расширенные</string>
+    <string name="top_k">topK</string>
+    <string name="top_p">topP</string>
+    <string name="max_output_tokens">maxOutputTokens</string>
+    <string name="open_settings">Открыть настройки</string>
+    <string name="allow_storage_access">
+    Для выбора изображения, пожалуйста, разрешите доступ к хранилищу устройства в настройках приложения.
+    </string>
+    <string name="permission_denied">Разрешение отклонено</string>
+    <string name="temporary_chat_notice">Это временный чат. История сообщений будет автоматически удалена.</string>
+    <string name="typing">печатает</string>
+    <string name="text_copied">Текст скопирован в буфер обмена</string>
+    <string name="edit">Редактировать</string>
+    <string name="search">Поиск</string>
+    <string name="new_chat_variant">Новый чат</string>
+    <string name="all_chat_variants">Все чаты</string>
+    <string name="clear_history">Очистить историю</string>
+    <string name="delete_chat">Удалить чат</string>
+    <string name="message">Сообщение</string>
+    <string name="online">в сети</string>
+    <string name="updating">обновление</string>
+    <string name="offline">соединение</string>
+    <string name="out_of">из</string>
+    <string name="api_key_replaced">api ключ заменен автоматически</string>
+    <string name="generation_error">Ошибка генерации</string>
+    <string name="view">посмотреть</string>
+    <string name="delete_selected_messages">Удалить выбранные сообщения</string>
+    <string name="delete_all_message_history">Удалить всю историю сообщений</string>
+    <string name="delete_chat_and_all_messages">Удалить чат и все сообщения</string>
+    <string name="save_changes">Сохранить изменения</string>
+    <string name="error">Ошибка</string>
+    <string name="app_version">version: </string>
+    <string name="temporary_chat">Временный чат</string>
+    <string name="api_key_annotation">Вы можете использовать свои апи ключи. API-ключи надёжно зашифрованы и хранятся только на вашем устройстве. Они используются исключительно для работы с сервисами Google Gemini AI.
+    Чтобы получить ключ, перейдите на официальный сайт Google AI Studio, нажмите "Get API Key" → "Create API Key".
+    </string>
+    <string name="ai_studio_website">официальный сайт Google AI Studio</string>
+    <string name="auto_replace_setting_explain_true">Если у api ключа закончится ресурс токенов, то он будет автоматически заменен на следующий.</string>
+    <string name="auto_replace_setting_explain_false">Если у api ключа закончится ресурс токенов, то он НЕ будет автоматически заменен на следующий.</string>
+    <string name="flow_mode_setting_explain_true">Новое сообщение от Gemini будет отображаться в чате постепенно во время генерации.</string>
+    <string name="local_mode_setting_explain_true">Если включен мод, все новые созданные персонажи хранятся только локально на устройстве, а генерация сообщений будет доступна только с вашими апи ключами.</string>
+    <string name="flow_mode_setting_explain_false">Новое сообщение от Gemini появится в чате только когда полностью сгенерируется.</string>
+    <string name="start_message">Здесь будут ваши чаты</string>
+    <string name="character_screen_list_start_message">Здесь будут персонажи</string>
+    <string name="credits">Приложение находится в стадии разработки, поэтому, возможно, в нём есть баги. Если у вас возникли вопросы или предложения, можете написать мне в Telegram @ensobaza_bot.</string>
+    <string name="enso_baza">\@ensobaza_bot</string>
+    <string name="topk_explain">Параметр topK изменяет способ, которым модель выбирает токены для вывода. Значение topK, равное 1, означает, что выбранный токен является наиболее вероятным среди всех токенов в словаре модели (также называется жадным декодированием), а значение topK, равное 3, означает, что следующий токен выбирается из трёх наиболее вероятных с помощью температуры. На каждом этапе выбора токена отбираются токены с наибольшей вероятностью. Затем токены дополнительно фильтруются на основе topP, а последний токен выбирается с помощью температурной выборки.</string>
+    <string name="topp_explain">Параметр topP изменяет способ, которым модель выбирает токены для вывода. Токены выбираются от наиболее вероятных к наиболее вероятных до тех пор, пока сумма их вероятностей не сравняется со значением topP. Например, если токены A, B и C имеют вероятность 0,3, 0,2 и 0,1, а значение topP равно 0,5, то модель выберет в качестве следующего токена A или B, используя температуру, и исключит C как кандидата. Значение topP по умолчанию равно 0,95.</string>
+    <string name="temperature_explain">Чем выше температура, тем более креативные и непредсказуемые ответы. Чем ниже — тем логичнее и точнее.</string>
+    <string name="max_outpot_tokens_explain">Указывает максимальное количество токенов, которые могут быть сгенерированы в ответе. Токен — это примерно четыре символа. 100 токенов соответствуют примерно 60–80 словами.</string>
+    <string name="insert_the_api_key">Вставьте api ключ</string>
+    <string name="promnt_instruction_explain">Введите инструкцию для нейросети или оставьте поле пустым для стандартных ответов. Если нужен более творческий или специфический вариант — уточнте детали, например, какой тон больше подходит (формальный, неформальный, дружелюбный и т.д.).</string>
+    <string name="temperature_logic">Логика, точность</string>
+    <string name="temperature_creative">Креативность</string>
+    <string name="advanced_setting_explain">Изменяйте эти настройки если знаете что делаете.</string>
+    <string name="avatar">Аватарка чата</string>
+    <string name="complaint_content">Пожаловаться на контент</string>
+    <string name="complaint_character">Пожаловаться</string>
+
+    Default bots:
+    <string name="motivation_buddy">Мотиватор</string>
+    <string name="captain">Капитан</string>
+    <string name="castle">Я очнулся в осажденном замке</string>
+    <string name="lisa">Лиза шеф повар</string>
+    <string name="creative_assistant">Творческий ассистент</string>
+    <string name="detective_story">Детективная история</string>
+    <string name="fitness_trainer">Фитнес тренер</string>
+    <string name="meme_generator">Генератор мемов</string>
+    <string name="virtual_dragon">Виртуальный питомец-дракон</string>
+    <string name="rpg_tavern">РПГ Таверна</string>
+    <string name="anna">Анна</string>
+
+    <string name="api_key_guide">
+        \n\n
+        🎉 **Как получить API-ключ?**\n\n
+        1️⃣ Перейдите на 👉[официальный сайт Google AI Studio](https://aistudio.google.com)👈\n\n
+        2️⃣ Нажмите **"Get API Key"**\n
+        🔑 Это кнопка для создания ключа\n\n
+        3️⃣ Выберите **"Create API Key"**\n
+        ✨ Система создаст ваш уникальный ключ\n\n
+        🎯 Готово! Скопируйте ключ и вставьте в настройках приложения\n
+    </string>
+    <string name="sign_in">Чтобы продолжить, пожалуйста, авторизуйтесь</string>
+    <string name="button_login_google">Войти через Google</string>
+
+    <string name="system_message_authorization_required_1">Привет! Кажется, ты ещё не авторизовался. Нажми кнопку ниже, и мы сможем продолжить наше общение.</string>
+    <string name="system_message_authorization_required_2">Эй, привет! Для начала нам нужно убедиться, что мы знакомы. Просто нажми кнопку для авторизации.</string>
+    <string name="system_message_authorization_required_3">Добро пожаловать! Давай познакомимся получше — нажми кнопку ниже, чтобы авторизоваться.</string>
+    <string name="system_message_authorization_required_4">Привет! Похоже, мы ещё не знакомы. Авторизуйся, нажав кнопку, и мы начнём беседу!</string>
+    <string name="system_message_authorization_required_5">Хей! Чтобы войти в чат, тебе нужно пройти авторизацию. Жми кнопку и приступай к общению.</string>
+    <string name="system_message_authorization_required_6">Приветствую! Давай сделаем нашу беседу более персональной — авторизуйся, нажав на кнопку ниже.</string>
+    <string name="system_message_authorization_required_7">Привет! Кажется, ты ещё не вошёл в систему. Нажми кнопку для авторизации, и мы продолжим!</string>
+    <string name="system_message_authorization_required_8">Здравствуй! Чтобы начать общение, необходимо авторизоваться. Просто нажми на кнопку ниже.</string>
+    <string name="system_message_authorization_required_9">Привет! Давай познакомимся получше. Для этого нажми кнопку и авторизуйся, чтобы мы могли общаться дальше.</string>
+    <string name="system_message_authorization_required_10">Привет, друг! Прежде чем мы продолжим, нужно узнать, кто ты. Нажми кнопку для авторизации и давай знакомиться!</string>
+
+    <!-- Системные сообщения в чате -->
+    <string name="system_message_quota_exceeded">Дневной лимит сообщений исчерпан. Он обновится завтра, либо вы можете подключить свой API-ключ в настройках.</string>
+    <string name="system_message_custom_model_missing">Не выбрана модель для генерации. Пожалуйста, выберите модель в настройках ИИ.</string>
+    <string name="system_message_custom_key_invalid">Неверный или недействительный API-ключ. Пожалуйста, проверьте ключ в настройках ИИ.</string>
+    <string name="system_message_custom_insufficient_credits">Недостаточно средств на балансе провайдера модели (OpenRouter). Пополните баланс или смените ключ.</string>
+    <string name="system_message_custom_rate_limit">Превышен лимит запросов к модели. Подождите немного перед отправкой следующего сообщения.</string>
+    <string name="system_message_custom_model_not_found">Модель не найдена у провайдера. Проверьте правильность названия модели в настройках.</string>
+    <string name="system_message_custom_context_length_exceeded">Контекст беседы превысил лимит выбранной модели. Попробуйте сжать контекст или переключиться на модель с большим окном контекста.</string>
+    <string name="system_message_custom_guardrails_restricted">Модель или эндпоинт заблокированы настройками приватности вашего аккаунта OpenRouter. Разрешите провайдеров в https://openrouter.ai/settings/privacy либо выберите другую модель.</string>
+    <string name="system_message_custom_provider_unavailable">Провайдер модели временно недоступен или перегружен. Попробуйте позже или выберите другую модель.</string>
+    <string name="system_message_blocked">Сообщение не может быть обработано, так как содержит недопустимый контент или нарушает правила безопасности.</string>
+    <string name="system_message_image_person_blocked">Генерация изображений реальных людей отклонена фильтрами безопасности.</string>
+    <string name="system_message_image_safety_blocked">Генерация изображения заблокирована фильтрами безопасности.</string>
+    <string name="system_message_server_error">Произошла ошибка при генерации ответа. Пожалуйста, попробуйте позже.</string>
+    <string name="system_message_user_banned">Ваш аккаунт заблокирован за нарушение правил сервиса.</string>
+    <string name="sys_btn_ai_settings">Настройки ИИ</string>
+
+    <string name="buy_energy_sheet_title">Пополнение энергии</string>
+    <string name="buy_energy_sheet_subtitle">Выберите пакет для мгновенного зачисления</string>
+    <string name="buy_energy_current_balance">Текущий баланс:</string>
+    <string name="buy_energy_loading_products">Загрузка предложений...</string>
+    <string name="buy_energy_no_products">Нет доступных предложений</string>
+    <string name="buy_energy_purchase_success">Покупка успешна! Энергия начислена</string>
+    <string name="buy_energy_daily_quota">Ежедневный: %1$d / %2$d</string>
+    <string name="buy_energy_reserve_balance">Дополнительный: %1$d</string>
+    <string name="buy_energy_purchase_success_subtitle">+%1$d ⚡ успешно добавлены на баланс</string>
+    <string name="dialog_success_button">Отлично</string>
+
+    <string name="system_message_authorization_bad">❌Что-то пошло не так. Проверь свои данные и повтори попытку.</string>
+    <string name="system_message_authorization_seccess">✅Вход выполнен успешно. Персонаж теперь доступен для ваших вопросов и обсуждений.</string>
+
+    <string name="unsupported_system_message">Неподдерживаемое системное сообщение</string>
+
+    <!-- Early Supporter Badge & Gratitude -->
+    <string name="supporter_badge_tag">Ранний спонсор</string>
+    <string name="supporter_badge_title">Спасибо за вашу поддержку! ✨</string>
+    <string name="supporter_badge_subtitle">Вы внесли неоценимый вклад в развитие Avalon • Нажмите, чтобы прочитать</string>
+    <string name="supporter_gratitude_title">Спасибо, что были с нами с самого начала! ✨</string>
+    <string name="supporter_gratitude_body">Привет!\n\nМы убрали платные подписки в Avalon и перешли на прямую работу с моделями через ваши собственные API-ключи (OpenRouter и Google AI). Это дает полную свободу, максимальную скорость и честный доступ к любым мировым нейросетям без искусственных ограничений тарифов.\n\nНо самое главное — мы помним каждого, кто поддержал нас на этапе становления.\n\nТвоя подписка и вера в проект в то время помогли Avalon развиваться, оплачивать сервера и расти дальше. Мы искренне благодарны за твой вклад и надеемся, что общение с персонажами принесло тебе классные эмоции.\n\nЭтот бейдж раннего спонсора навсегда останется в твоем профиле как знак нашей признательности.\n\nС теплом и уважением,\nКоманда Avalon 💙</string>
+    <string name="supporter_gratitude_btn">С благодарностью 💙</string>
+
+    <!-- OpenAPI Transition Announcement Banner & BottomSheet -->
+    <string name="announcement_openapi_tag">Важное обновление</string>
+    <string name="announcement_openapi_title">Новая глава Avalon: свои API-ключи ✨</string>
+    <string name="announcement_openapi_subtitle">Платные тарифы и лимиты убраны. Подключайте OpenRouter и Google AI напрямую • Нажмите для деталей</string>
+    <string name="announcement_openapi_sheet_title">Свобода выбора и ваши API-ключи ✨</string>
+    <string name="announcement_openapi_sheet_body">Привет! Мы полностью обновили концепцию работы с нейросетями в Avalon.\n\n🔹 Больше никаких платных подписок и лимитов\nМы отказались от платных тарифов и искусственных дневных ограничений сообщений. Avalon теперь открыт для всех.\n\n🔹 Прямое подключение к нейросетям\nТеперь вы можете подключить собственный API-ключ (например, OpenRouter или Google AI) и самостоятельно выбирать любые передовые языковые модели мира без наценок и рамок.\n\n🔹 Как настроить?\nПерейдите в «Настройки ИИ» (в профиле или боковом меню), укажите свой API-ключ и выберите понравившуюся модель.\n\nСпасибо, что вы с нами! Приятного общения с персонажами 💙</string>
+    <string name="announcement_openapi_sheet_btn_settings">Настройки ИИ</string>
+    <string name="announcement_openapi_sheet_btn_close">Понятно</string>
+
+    <string name="stage_one">Выберите имя AI персонажа</string>
+    <string name="description">Описание</string>
+    <string name="author">Автор</string>
+    <string name="character_name">Имя персонажа</string>
+    <string name="continue_button">Продолжить</string>
+    <string name="back_button">Назад</string>
+    <string name="publish">Создать</string>
+    <string name="visible">Видимость</string>
+    <string name="profile_image">Аватарка</string>
+    <string name="add_profile_image_description">Добавьте изображение для AI персонажа</string>
+    <string name="public_setting">Публичный</string>
+    <string name="public_setting_description">Видно и доступно всем</string>
+    <string name="private_setting">Приватный</string>
+    <string name="link_only_setting">Доступен по ссылке</string>
+    <string name="link_only_setting_description">Виден и доступен только по прямой ссылке</string>
+    <string name="private_setting_description">Видно и доступно только вам</string>
+    <string name="short_description_stage">Короткое описание</string>
+    <string name="full_description_stage">Личность и характер</string>
+    <string name="scenario_stage">Сценарий и обстановка</string>
+    <string name="scenario_stage_desc">Опишите стартовую ситуацию: где вы находитесь и что происходит вокруг</string>
+    <string name="change_character_scenario">Изменить сценарий</string>
+    <string name="mes_example_stage">Примеры диалога</string>
+    <string name="mes_example_stage_desc">Образцы реплик персонажа для точной передачи стиля речи</string>
+    <string name="change_character_mes_example">Изменить примеры диалога</string>
+    <string name="first_message_stage">Первое сообщение</string>
+    <string name="first_message">Чат начнется с этого сообщения. Можете оставить пустым, что бы выключить первое сообщение.</string>
+    <string name="full_description_private">Скрыто настройками приватности</string>
+    <string name="full_description_empty">Здесь пока что пусто</string>
+    <string name="categories_stage">Выберите категорию</string>
+    <string name="full_description">Опишите личность и особенности вашего AI-персонажа: характер, привычки, манеру общения и интересы. Чем детальнее будет описание, тем точнее AI отразит задуманную вами личность в своих ответах.</string>
+    <string name="short_description">Опишите AI персонажа – его личность, стиль общения и особенности</string>
+    <string name="safety_and_censor_stage">Безопасность и модерация</string>
+    <string name="welcome_card_stage">Приветственная карточка</string>
+    <string name="welcome_card_stage_description">Настройте приветственную карточку. Она не повлияет на персонажа, но здесь вы можете добавить метаданные, информацию о персонаже, игре или пояснения.</string>
+    <string name="safety_and_censor">Изменить настройки безопасности и модерации ответов AI персонажа</string>
+    <string name="in_development">В РАЗРАБОТКЕ</string>
+    <string name="add_image">Добавить изображение</string>
+    <string name="create">Создать</string>
+    <string name="logic">точность, логика</string>
+    <string name="moderation">умеренно</string>
+    <string name="creativity">креативность</string>
+    <string name="temperature_stages">Как будет отвечать персонаж?</string>
+    <string name="temperature_stages_description">Настройте, насколько логичными или креативными будут ответы AI персонажа.</string>
+    <string name="save_profile_changes">Сохранить изменения</string>
+    <string name="profile_images">Изображения</string>
+    <string name="private_setting_full_description">Приватно</string>
+    <string name="public_setting_full_description">Публично</string>
+
+    <string name="screen_tab_my_chats">Чаты</string>
+    <string name="screen_tab_all_chats">Персонажи</string>
+
+    <string name="update_character_loading">Обновление персонажа</string>
+    <string name="update_character_success">Персонаж обновлен</string>
+
+    <string name="add_character_loading">Создаем персонажа 🤖🤖🤖</string>
+    <string name="add_character_success">ПЕРСОНАЖ СОЗДАН</string>
+    <string name="start_chat">НАЧАТЬ ЧАТ</string>
+
+    <string name="delete_account">Удалить аккаунт</string>
+    <string name="delete_account_explain">Аккаунт будет удален в течении 24 часов</string>
+
+    <string name="logout">Выйти</string>
+
+    <string name="authorization">Авторизоваться</string>
+    <string name="app_settings">Настройки приложения</string>
+
+    <string name="profile">Профиль</string>
+
+    <string name="charges">Заряды: полностью восстанавливаются каждый час. 1 заряд = 1 сообщение.</string>
+    <string name="one_hour">Час</string>
+
+    <string name="person">Персона:</string>
+    <string name="person_screen">Персона</string>
+    <string name="person_off">выключена</string>
+    <string name="create_new_person">Создать новую Персону</string>
+    <string name="create_new_person_button">Создать Персону</string>
+    <string name="persona_save_changes">Сохранить изменения</string>
+    <string name="person_name">Имя</string>
+    <string name="person_name_placeholder">Имя персоны</string>
+    <string name="person_description">Описание персоны</string>
+    <string name="person_description_placeholder">Описание Персоны может включать внешность, характер, цели, события и так далее.</string>
+    <string name="delete_persona">Удалить персону</string>
+    <string name="persona_explain">Персонажи будут помнить, как вас зовут и что вам нравится, чтобы отвечать подходяще</string>
+
+    <string name="archive">Архив</string>
+
+    <string name="service_unavailable">Сервис временно недоступен попробуйте позже.🔧</string>
+
+    <string name="upgrade_required">Доступно новое обновление! Исправлены ошибки и улучшена стабильность работы. Обновите приложение.</string>
+    <string name="telegram_reminder_text">Телеграм канал Avalon avatars, информация и новости о проекте</string>
+    <string name="telegram_avalon_avatars">Телеграм канал</string>
+    <string name="open_telegram_failed">Не удалось открыть Telegram</string>
+
+    <string name="stories">Истории</string>
+    <string name="story">История</string>
+    <string name="change_name">Изменить название</string>
+    <string name="changed_image">Изменить картинку</string>
+    <string name="clear_chat">Очистить чат</string>
+    <string name="delete">Удалить</string>
+    <string name="change_story_name">Изменить название истории</string>
+    <string name="save">Сохранить</string>
+    <string name="delete_story">Удалить историю: </string>
+    <string name="change_image">Изменить картинку</string>
+    <string name="clear">Очистить</string>
+
+    <string name="edit_character_private_photos_title">Приватная галерея</string>
+    <string name="edit_character_private_photos_desc">Загрузи приватные фотографии, которые пользователи будут открывать за энергию.</string>
+    <string name="add_photo_desc">Добавить фото</string>
+    <string name="private_photo_desc">Приватное фото</string>
+    <string name="energy_desc">Энергия</string>
+    <string name="uploading_new_images">Загружаем новые изображения...</string>
+    <string name="paid_photo_settings_title">Настройка платного фото</string>
+    <string name="paid_photo_settings_desc">Пользователи будут открывать это изображение за энергию</string>
+    <string name="enter_number">Введите число</string>
+    <string name="min_price_error">Минимальная цена — 50 энергии</string>
+    <string name="max_price_error">Максимальная цена — 50 000 энергии</string>
+    <string name="energy_cost_label">Стоимость в энергии (50 - 50 000)</string>
+    <string name="image_settings_title">Настройки фотографии</string>
+    <string name="private_photo_label">Приватное фото</string>
+    <string name="friendship_level_reward_title">Награда за уровень дружбы (опционально)</string>
+    <string name="friendship_level_reward_desc">Фото откроется автоматически при достижении этого уровня</string>
+    <string name="required_friendship_level_label">Требуемый уровень отношений (1 - 65)</string>
+    <string name="example_level_placeholder">Например: 5</string>
+    <string name="apply_action">Применить</string>
+    <string name="energy_cost_range_error">Стоимость должна быть от 50 до 50 000</string>
+    <string name="level_range_error">Уровень должен быть от 1 до 65</string>
+
+    <string name="premium_gallery_title">ЗАКРЫТЫЙ АЛЬБОМ</string>
+    <string name="locked_desc">Заблокировано</string>
+    <string name="level_short">Ур. %1$d</string>
+    <string name="premium_image_content_description">Премиум-изображение %1$d из %2$d</string>
+    <string name="blurred_image_loading_desc">Загрузка премиум-изображения...</string>
+    <string name="blurred_image_desc">Премиум-изображение (заблокировано)</string>
+    <string name="available_from_level">Доступно с уровня %1$d</string>
+    <string name="unlock_photo">Разблокировать фото</string>
+    <string name="photo_available_on_level_up">Фотография станет доступна при повышении уровня отношений.</string>
+    <string name="unlock_photo_confirm_pattern">Хотите разблокировать эту фотографию за %1$d энергии?</string>
+    <string name="required_level_pattern">Требуется уровень: %1$d</string>
+    <string name="unlock_for_energy_pattern">Разблокировать за ⚡%1$d</string>
+    <string name="close">Закрыть</string>
+    <string name="download">Скачать</string>
+
+    <string name="untitled_story">История без названия </string>
+    <plurals name="messages_count">
+        <!-- Числа, оканчивающиеся на 1, кроме 11 (1, 21, 31...) -->
+        <item quantity="one">%d сообщение</item>
+        <!-- Числа, оканчивающиеся на 2, 3, 4, кроме 12, 13, 14 (2, 3, 4, 22...) -->
+        <item quantity="few">%d сообщения</item>
+        <!-- Все остальные случаи (0, 5-20, 25, 100...) -->
+        <item quantity="many">%d сообщений</item>
+        <!-- Резервный вариант, обычно совпадает с "many" -->
+        <item quantity="other">%d сообщений</item>
+    </plurals>
+
+    <string name="unacceptable_content">Не удалось сгенерировать текст. Причина: ошибка сервера Google или контент заблокирован.</string>
+
+    <string name="donate">Купить кофе разработчику(донат)</string>
+
+    <string name="user_name_placeholder">\@user_name</string>
+
+    <string name="nickname_rules">Допустимые символы: английские буквы (A-Z, a-z), цифры (0-9), символы: _</string>
+    <string name="error_empty">Ник не может быть пустым</string>
+    <string name="error_too_short">Минимум %1$d символов</string>
+    <string name="error_too_long">Максимум %1$d символов</string>
+    <string name="error_invalid_chars">Недопустимые символы</string>
+    <string name="error_invalid_start_end">Нельзя начинать или заканчивать _ - .</string>
+    <string name="error_consecutive_special">Недопустимы повторяющиеся символы</string>
+    <string name="error_inappropriate">Содержит запрещенные слова</string>
+    <string name="error_system_name">Системное имя не разрешено</string>
+    <string name="checking_username">Проверка имени пользователя</string>
+    <string name="this_username_is_already_taken">Это имя пользователя уже занято</string>
+    <string name="connection_error">Ошибка подключения</string>
+    <string name="user_name_is_free">Имя пользователя свободно</string>
+    <string name="user_name">Имя пользователя</string>
+    <string name="cgange_user_name">Изменить имя пользователя</string>
+
+    <string name="description_placeholder">Здесь были настройки, но сейчас они не работают. Будет доступно в следующем обновлении. </string>
+    <string name="some_message_error">🤷‍♂️ Ошибка</string>
+
+    <string name="change_character_name">Изменить имя</string>
+    <string name="change_character_description">Изменить описание</string>
+    <string name="change_character_first_message">Изменить первое сообщение</string>
+    <string name="change_character_privacy">Редактировать приватность</string>
+    <string name="images">ИЗОБРАЖЕНИЯ</string>
+    <string name="add_an_avatar">Добавить аватар</string>
+    <string name="a_few_words_about_the_character">Пара слов о персонаже…</string>
+    <string name="history_character_habits">История, характер, привычки…</string>
+    <string name="where_will_the_dialogue_begin">С чего начнется диалог?</string>
+    <string name="welcome_card">Приветственная карточка</string>
+    <string name="set_up_a_welcome_card">Настроить приветственную карточку</string>
+    <string name="privacy">Приватность</string>
+
+    <string name="neural_entropy">Нейро энтропия</string>
+    <string name="neural_entropy_info">Настройте степень случайности модели искусственного интеллекта.</string>
+    <string name="neural_03">СТРОГАЯ ЛОГИКА</string>
+    <string name="neural_07">БАЛАНС</string>
+    <string name="neural_more_07">ТВОРЧЕСКИЙ ХАОС</string>
+    <string name="neural_03_info">Точные, основанные на фактах и детерминированные ответы. Идеально подходят для помощи и кодирования.</string>
+    <string name="neural_07_info">Естественный разговор с сочетанием логики и креативности. Лучше всего подходит для чата.</string>
+    <string name="neural_more_07_info">Непредсказуемый, артистичный и обладающий богатым воображением. Хорошо подходит для мозгового штурма и ролевых игр.</string>
+
+    <string name="user_profile_quota">Энергия</string>
+    <string name="user_profile_quota_updated">Обновляется</string>
+    <string name="user_profile_battery">Батарейки</string>
+    <string name="user_profile_battery_in_reserve">В запасе</string>
+    <string name="app_broken">Ой, что-то сломалось!</string>
+    <string name="app_broken_2">Мы уже отправили отчет разработчикам.</string>
+    <string name="app_repair_fix_and_restart">Починить и перезапустить</string>
+
+    <string name="feature_bank_energy">Банк энергии %1$s</string>
+    <string name="feature_custom_backgrounds">Кастомные фоны чата</string>
+    <string name="feature_extended_memory">Расширенная память (лучший контекст)</string>
+    <string name="feature_golden_glow">Золотое VIP сияние</string>
+    <string name="feature_early_access">Ранний доступ к обновлениям</string>
+
+    <string name="continue_caps_button">ПОДОЛЖИТЬ</string>
+    <string name="system_upgraded">СИСТЕМА ОБНОВЛЕНА</string>
+    <string name="plan_status_active_pattern">СТАТУС %1$s: АКТИВЕН</string>
+    <string name="upgrade_max_capacity">Максимальная емкость увеличена до %1$s</string>
+    <string name="upgrade_daily_energy">Дневная энергия увеличена до %1$s</string>
+
+    <string name="price_per_month_pattern">/ мес</string>
+    <string name="btn_activate">АКТИВИРОВАТЬ</string>
+    <string name="stat_daily_energy">Энергия в день</string>
+    <string name="stat_max_capacity">Емкость ядра</string>
+
+    <string name="sub_status_active">Активна</string>
+    <string name="sub_valid_until">Следующее списание: %1$s</string>
+    <string name="sub_manage_market">Управление в магазине</string>
+    <string name="sub_upgrade_title">Доступен апгрейд системы</string>
+    <string name="sub_upgrade_btn">ПОВЫСИТЬ УРОВЕНЬ ЯДРА</string>
+    <string name="sub_current_plan">Текущий уровень ядра</string>
+    <string name="sub_promo_free_title">Разблокируй Premium</string>
+    <string name="sub_promo_free_subtitle">Увеличь лимиты, включи озвучку и премиум-функции</string>
+    <string name="sub_promo_active_title">Подписка %1$s активирована</string>
+    <string name="sub_promo_active_subtitle">Все премиум-функции активны. Спасибо за поддержку!</string>
+
+    <string name="core_energy">ЭНЕРГИЯ ЯДРА</string>
+    <string name="recovery">Восстановление</string>
+    <string name="daily_at_utc">Ежедневно в 00:00 UTC</string>
+    <string name="increase_limit">ПОВЫСИТЬ ЛИМИТ</string>
+
+    <string name="reserved_storage_title">РЕЗЕРВНОЕ ХРАНИЛИЩЕ</string>
+    <string name="accumulation_title">Аккумуляция</string>
+    <string name="accumulation_explain">Неиспользованная за день энергия автоматически переносится сюда в 00:00 UTC.</string>
+    <string name="access_title">Доступ</string>
+    <string name="access_explain">Функция накопления активна только на платных тарифах. На Free тарифе энергия сгорает.</string>
+    <string name="btn_close">ЗАКРЫТЬ</string>
+
+    <string name="restore_purchase">Восстановить покупки</string>
+    <string name="terms_of_service">Условия использования</string>
+    <string name="privacy_policy">Политика конфиденциальности</string>
+    <string name="purchase_agreement_hint">Подписываясь, вы соглашаетесь с нашими %1$s и %2$s.</string>
+
+    <string name="payment_service_disable">Технические работы, попробуйте позже</string>
+    <string name="max_tariff_reached">У вас уже максимальный уровень тарифа</string>
+    <string name="max_power">МАКСИМАЛЬНАЯ МОЩНОСТЬ</string>
+    <string name="max_tariff_efficiency_description">Ваше ядро работает на 100% мощности. Статус Elite активен. Дальнейшие улучшения не требуются.</string>
+    <string name="return_to_base">ВЕРНУТЬСЯ НА БАЗУ</string>
+    <string name="upgrade_in_development">Апгрейд подписки в разработке</string>
+    <string name="await_purchase">Ожидаем подтверждение платежа</string>
+
+    <string name="sub_current_plan_pattern">Текущий уровень ядра: %1$s</string>
+    <string name="recomended_caps">РЕКОМЕНДУЕМ</string>
+    <string name="voice_streaming_feature">Озвучивание сообщений (Голос ИИ)</string>
+    <string name="voice_streaming_free_desc">Недоступно</string>
+    <string name="voice_streaming_paid_desc">Все голоса доступны</string>
+    <string name="memory_free_desc">Базовая</string>
+    <string name="memory_premium_desc">Базовая</string>
+    <string name="memory_crystal_desc">Расширенная (контекст x3)</string>
+    <string name="memory_elite_desc">Максимальная</string>
+    <string name="vip_glow_desc">Золотая VIP аура</string>
+    <string name="early_access_desc">Доступ к бета-фичам</string>
+    <string name="energy_burns_desc">Сгорает в 00:00</string>
+    <string name="energy_accumulates_desc">Накопление до %1$s</string>
+    <string name="persona_creation_feature">Создание Персон</string>
+    <string name="persona_creation_free_desc">до 5</string>
+    <string name="persona_creation_paid_desc">Безлимитно</string>
+
+    <string name="persona_free_limit_reached">ДОСТИГНУТ ЛИМИТ ТАРИФА FREE</string>
+    <string name="persona_limit_description">Снимите ограничения и создавайте бесконечное количество персон.</string>
+    <string name="persona_remove_limit_button">СНЯТЬ ОГРАНИЧЕНИЯ</string>
+
+    <string name="characters_screen_top_bar">Персонажи</string>
+
+    <plurals name="deleted_chats_count">
+        <item quantity="one">Удален %1$d чат</item>
+        <item quantity="few">Удалено %1$d чата</item>
+        <item quantity="many">Удалено %1$d чатов</item>
+        <item quantity="other">Удалено %1$d чатов</item>
+    </plurals>
+
+    <string name="deleted_character">Удален персонаж %1$s</string>
+
+    <plurals name="deleted_messages_count">
+        <item quantity="one">Удалено %1$d сообщение</item>
+        <item quantity="few">Удалено %1$d сообщения</item>
+        <item quantity="many">Удалено %1$d сообщений</item>
+        <item quantity="other">Удалено %1$d сообщений</item>
+    </plurals>
+
+    <string name="tap_to_chat">Нажмите, чтобы начать чат</string>
+    <string name="expand_menu">Развернуть меню</string>
+
+    <string name="my_characters">МОИ ПЕРСОНАЖИ</string>
+
+    <string name="system_instruction_title">Системная инструкция</string>
+    <string name="remark">Ремарка</string>
+    <string name="remark_explanation">Скрытая ремарка: Направьте поведение персонажа или добавьте действие. Не видно в чате.</string>
+    <string name="system_instruction_placeholder">Например: напиши мне в теплом дружелюбном тоне</string>
+    <string name="chat_item_gift">Подарок</string>
+    <string name="chat_item_photo">Фото</string>
+    <string name="chat_draft">Черновик</string>
+
+    <string name="image_saved_to_downloads">Сохранено в ~/Загрузки</string>
+    <string name="downloading_image">Скачивание изображения…</string>
+    <string name="microphone_permission_denied">Нет доступа к микрофону. Разрешите в настройках.</string>
+
+    <!-- Live Call Screen -->
+    <string name="livecall_microphone_off">Микрофон выключен</string>
+    <string name="livecall_status_idle">Готов к звонку</string>
+    <string name="livecall_status_connecting">Подключение…</string>
+    <string name="livecall_status_active">Звонок активен</string>
+    <string name="livecall_status_interrupted">Обработка…</string>
+    <string name="livecall_status_reconnecting">Переподключение…</string>
+    <string name="livecall_status_stopping">Завершение…</string>
+    <string name="livecall_status_stopped">Звонок завершён</string>
+    <string name="livecall_mute_enable">Включить микрофон</string>
+    <string name="livecall_mute_disable">Выключить микрофон</string>
+    <string name="livecall_error">Ошибка</string>
+    <string name="livecall_end_call">Завершить звонок</string>
+    <string name="livecall_start_call">Начать звонок</string>
+    <string name="livecall_select_language">Выбери язык</string>
+    <string name="livecall_select_model">Выбери модель</string>
+    <string name="livecall_unknown_character">Неизвестный</string>
+    <string name="livecall_gender_male">М</string>
+    <string name="livecall_gender_female">Ж</string>
+
+    <!-- Customization Screen -->
+    <string name="customization_title">Настройка темы</string>
+    <string name="customization_themes">Темы</string>
+    <string name="customization_bubble_colors">Цвета сообщений</string>
+    <string name="customization_bubble_style">Стиль сообщений</string>
+    <string name="customization_default">По умолчанию</string>
+    <string name="customization_selected">Выбрано</string>
+    <string name="customization_font_size">Размер шрифта</string>
+    <string name="customization_shape">Форма</string>
+    <string name="customization_shape_tail">Хвостик</string>
+    <string name="customization_shape_rounded">Скруглённый</string>
+    <string name="customization_shape_soft_corner">Мягкий угол</string>
+    <string name="customization_shape_soft">Мягкий</string>
+    <string name="customization_corner_radius">Радиус углов</string>
+    <string name="customization_preview_bot_message">Привет! Как дела? 😊</string>
+    <string name="customization_preview_user_message">Отлично, спасибо!</string>
+    <string name="customization_back">Назад</string>
+    <string name="chat_background_title">Задний фон чата</string>
+    <string name="chat_background_label">ФОН ЧАТА</string>
+    <string name="add_background">Добавить фон</string>
+    <string name="background_blur">Размытие фона</string>
+    <string name="chat_media">МЕДИА ЧАТА</string>
+
+    <!-- Outreach Settings -->
+    <string name="outreach_setting_title">Инициативный контакт</string>
+    <string name="outreach_setting_allowed_title">Может писать первым</string>
+    <string name="outreach_setting_allowed_description">Персонаж может сам начать диалог и присылать сообщения другим пользователям.</string>
+    <string name="outreach_setting_blocked_title">Не может писать первым</string>
+    <string name="outreach_setting_blocked_description">Персонаж никогда не будет писать другим пользователям первым.</string>
+    <string name="outreach_setting_title_short">Может писать первым?</string>
+    <string name="outreach_setting_dialog_title">Может писать первым?</string>
+
+    <string name="user_outreach_setting_title">Получать сообщения от персонажей</string>
+    <string name="user_outreach_setting_description">Разрешить ИИ-персонажам первыми начинать с вами диалог.</string>
+
+    <!-- Interaction Format Settings -->
+    <string name="interaction_format_setting_title">Формат взаимодействия</string>
+    <string name="interaction_format_setting_title_short">Формат взаимодействия</string>
+    <string name="interaction_format_dialog_title">Выбор формата взаимодействия</string>
+    <string name="interaction_format_literary_rpg_title">Литературный РПГ</string>
+    <string name="interaction_format_literary_rpg_description">Повествование от третьего лица с описанием действий в *звездочках*, фокус на ролевой игре и истории.</string>
+    <string name="interaction_format_chat_simulator_title">Симулятор чата</string>
+    <string name="interaction_format_chat_simulator_description">Диалог от первого лица в формате обычного мессенджера, без повествования и описания действий.</string>
+
+    <!-- Relationship Road Strings -->
+    <string name="relationship_road_title">Карта наград дружбы</string>
+    <string name="relationship_road_progress_title">Ваш прогресс отношений</string>
+    <string name="relationship_road_level_pattern">Уровень %1$d из 65</string>
+    <string name="relationship_road_current_xp">Текущий опыт:</string>
+    <string name="relationship_road_hint">Общайтесь с персонажем, чтобы получать XP и повышать уровень дружбы!</string>
+    <string name="relationship_road_rewards_header">ЛИНИЯ НАГРАД</string>
+    <string name="relationship_road_level_item">Уровень %1$d</string>
+    <string name="relationship_road_reached">Достигнут</string>
+    <string name="relationship_road_locked">Заблокировано</string>
+    <string name="relationship_road_two_rewards">2 Награды</string>
+    <string name="relationship_road_reward_story">Сюжет</string>
+    <string name="relationship_road_reward_bonus">Бонус</string>
+    <string name="relationship_road_hide">Скрыть</string>
+    <string name="relationship_road_more">Подробнее</string>
+    <string name="relationship_road_no_rewards">Нет наград</string>
+    <string name="relationship_road_curiosity_event_title">🎭 Сюжетное событие</string>
+    <string name="relationship_road_curiosity_event_locked">🔒 Сценарий этого сюжетного события засекречен. Повышайте уровень дружбы с персонажем, чтобы разблокировать и отыграть его в чате!</string>
+
+    <string name="reward_level_5_title">🔓 Свободное общение</string>
+    <string name="reward_level_5_desc">Персонаж получает возможность писать вам первым в личные сообщения, когда вы оффлайн. Настройку можно изменить в профиле персонажа.</string>
+    <string name="reward_level_7_title">🧠 Улучшение памяти I</string>
+    <string name="reward_level_7_desc">Глубина контекста истории переписки увеличивается. Персонаж помнит детали диалога на 25% лучше от базового уровня.</string>
+    <string name="reward_level_10_title">⚡ Скидка дружбы 5%</string>
+    <string name="reward_level_10_desc">Каждое текстовое сообщение этому персонажу теперь стоит на 5% меньше энергии (округление в пользу пользователя).</string>
+    <string name="reward_level_15_title">💬 Фаза отношений: Близкий друг</string>
+    <string name="reward_level_15_desc">Персонаж переходит в фазу доверительного общения: он становится более заботливым, делится секретами, а его память улучшается на 60% от базовой.</string>
+    <string name="reward_level_25_title">⚡ Скидка 10% + 🧠 Память III</string>
+    <string name="reward_level_25_desc">Скидка на сообщения увеличивается до 10%, а память персонажа улучшается на 100% от базовой.</string>
+    <string name="reward_level_30_title">💬 Фаза отношений: Родственная душа</string>
+    <string name="reward_level_30_desc">ИИ переходит в фазу глубокой привязанности: использует ласковые слова, выражает искреннюю верность и может проявлять легкую ревность.</string>
+    <string name="reward_level_40_title">🧠 Улучшение памяти IV</string>
+    <string name="reward_level_40_desc">Память персонажа улучшается на 135% от базовой. Отличная память для сложных ролевых сюжетов.</string>
+    <string name="reward_level_50_title">⚡ Скидка 15% + 💬 Фаза: Партнер</string>
+    <string name="reward_level_50_desc">Скидка на сообщения достигает максимума в 15%. Персонаж переходит в фазу абсолютного доверия и максимальной близости.</string>
+    <string name="reward_level_55_title">🧠 Улучшение памяти V</string>
+    <string name="reward_level_55_desc">Память персонажа улучшается на 175% от базовой. Персонаж помнит практически все детали долгого разговора.</string>
+    <string name="reward_level_65_title">🧠 Абсолютная память ИИ</string>
+    <string name="reward_level_65_desc">Достигнут максимальный предел памяти персонажа (+210% от базовой). Персонаж помнит всю хронологию текущего сюжета.</string>
+
+    <!-- Character Events Screen -->
+    <string name="character_events_title">Сюжетные события</string>
+    <string name="character_events_info_desc">Сюжетные события позволяют вашему персонажу стать живым! Когда уровень дружбы пользователя достигает указанной отметки, срабатывает уникальный сценарий, а характер персонажа навсегда адаптируется под этот опыт.</string>
+    <string name="character_events_empty_state">У этого персонажа ещё нет сюжетных событий.\nНажмите кнопку ниже, чтобы создать первое событие!</string>
+    <string name="character_events_item_title">Событие #%1$d</string>
+    <string name="character_events_delete_action">Удалить событие</string>
+    <string name="character_events_required_level">Необходимый уровень отношений</string>
+    <string name="character_events_name_label">Название сюжетного события</string>
+    <string name="character_events_name_placeholder">Например: Первая откровенная беседа</string>
+    <string name="character_events_scenario_label">Сюжетный сценарий</string>
+    <string name="character_events_scenario_placeholder">Например: Вы забрели в заброшенную библиотеку и нашли старый дневник...</string>
+    <string name="character_events_trait_label">Изменение характера</string>
+    <string name="character_events_trait_placeholder">Например: Теперь ты помнишь, что у тебя есть старый дневник, и становишься более скрытным...</string>
+    <string name="character_events_add_button">Добавить событие</string>
+
+    <string name="character_events_section_desc">Настроить сюжетные события и черты характера</string>
+    <string name="character_events_error_load">Не удалось загрузить события: %1$s</string>
+    <string name="character_events_error_duplicates">Каждому уровню отношений должно соответствовать ровно одно событие. Дубликаты недопустимы.</string>
+    <string name="character_events_error_empty_fields">Все поля названий, сценариев и черт должны быть заполнены</string>
+    <string name="character_events_error_save">Не удалось сохранить изменения: %1$s</string>
+
+    <!-- Friendship Progress Section -->
+    <string name="friendship_progress_header">УРОВЕНЬ ОТНОШЕНИЙ</string>
+    <string name="friendship_progress_level_pattern">Уровень %1$d</string>
+    <string name="friendship_progress_click_hint">Нажмите, чтобы открыть карту наград дружбы</string>
+
+    <!-- Character Outreach Settings -->
+    <string name="outreach_settings_title">Настройка общения</string>
+    <string name="outreach_settings_section_title">Первые сообщения</string>
+    <string name="outreach_settings_section_desc">Настройка проактивных сообщений</string>
+    <string name="outreach_settings_locked_desc">🔒 Достигните 5-го уровня отношений, чтобы персонаж начал писать вам первым по утрам, дням или вечерам!</string>
+    <string name="outreach_settings_unlocked_desc">✨ Выберите, когда персонаж будет писать вам первым и о чем вы хотите общаться.</string>
+    <string name="outreach_settings_allow_label">Разрешить писать первым</string>
+    <string name="outreach_settings_slot_morning">🌅 Утренние сообщения (09:00 - 12:00)</string>
+    <string name="outreach_settings_slot_afternoon">☀️ Дневные сообщения (12:00 - 16:00)</string>
+    <string name="outreach_settings_slot_evening">🌌 Вечерние сообщения (18:00 - 21:00)</string>
+    <string name="outreach_settings_prompt_label">Пожелание о теме сообщения</string>
+    <string name="outreach_settings_prompt_placeholder">Например: пожелай хорошего дня / напомни выпить воды / спроси, как дела на работе...</string>
+    <string name="outreach_settings_prompt_max_length_error">Длина пожелания не должна превышать 250 символов</string>
+    <string name="outreach_settings_load_error">Не удалось загрузить настройки: %1$s</string>
+    <string name="outreach_settings_save_error">Не удалось сохранить настройки: %1$s</string>
+    <string name="outreach_settings_save_success">Настройки успешно сохранены</string>
+    <string name="outreach_tap_to_configure">Нажми для настройки</string>
+    <string name="available_from_level_short">Доступно с %1$d ур.</string>
+    <string name="add_paid_photos">Добавить платные фото</string>
+    <string name="ai_warning_text">Это не настоящий чат, текст сгенерирован при помощи AI. </string>
+    <string name="ai_warning_link">Подробнее</string>
+    <string name="ai_warning_sheet_title">Безопасность и правила чата</string>
+    <string name="ai_warning_bullet_1_title">Искусственный интеллект</string>
+    <string name="ai_warning_bullet_1_desc">Все персонажи вымышлены. Сообщения генерируются автоматически и могут содержать неточности.</string>
+    <string name="ai_warning_bullet_2_title">Не является рекомендацией</string>
+    <string name="ai_warning_bullet_2_desc">Не следуйте советам ИИ. Они не заменяют квалифицированную медицинскую, юридическую или финансовую помощь.</string>
+    <string name="ai_warning_bullet_3_title">Защита личных данных</string>
+    <string name="ai_warning_bullet_3_desc">Не отправляйте персонажу пароли, номера банковских карт, адреса и другую конфиденциальную информацию.</string>
+    <string name="ai_warning_btn_terms">Условия использования</string>
+    <string name="ai_warning_btn_privacy">Политика конфиденциальности</string>
+    <string name="ai_warning_sheet_disable_tip">Вы можете скрыть это предупреждение в настройках кастомизации, если хотите видеть чистый чат.</string>
+    <string name="customization_ai_warning_title">Предупреждение об ИИ</string>
+    <string name="customization_ai_warning_desc">Показывать предупреждение об ИИ в нижней части экрана чата</string>
+    <string name="customization_flow_mode_title">Flow Mode</string>
+    <string name="customization_flow_mode_desc">Отображать генерацию сообщения в реальном времени, вместо ожидания полного ответа</string>
+    <string name="customization_advanced_settings">Дополнительные настройки</string>
+
+    <string name="chat_presets_title">Стиль сообщений</string>
+    <string name="chat_presets_apply">Выбрать</string>
+    <string name="chat_presets_applied">Выбрано</string>
+    <string name="chat_presets_premium_only">Доступно с Premium</string>
+    <string name="chat_preset_standard_title">Классические бабблы</string>
+    <string name="chat_preset_standard_desc">Классический диалог с настраиваемыми облаками сообщений</string>
+    <string name="chat_preset_classic_title">Книжный роман</string>
+    <string name="chat_preset_classic_desc">Выделение речи кавычками, а действий персонажа — курсивом</string>
+    <string name="chat_preset_novel_title">Визуальная новелла</string>
+    <string name="chat_preset_novel_desc">Стиль интерактивных новелл с рамкой диалога и именем отправителя</string>
+    <string name="chat_preset_cyberpunk_title">Киберпанк-лог</string>
+    <string name="chat_preset_cyberpunk_desc">Стилизованный консольный лог с неоновыми префиксами</string>
+    <string name="chat_preset_cinematic_title">Киносценарий</string>
+    <string name="chat_preset_cinematic_desc">Формат голливудского сценария с выравниванием по центру</string>
+    <string name="chat_preset_rpg_title">Настольная RPG</string>
+    <string name="chat_preset_rpg_desc">Стиль карточки настольной игры с декоративными рамками</string>
+    <string name="chat_preset_minimal_title">Минималистичный</string>
+    <string name="chat_preset_minimal_desc">Лаконичный вид с разделителями без громоздких облаков</string>
+    <string name="chat_preset_intimate_title">Свечение</string>
+    <string name="chat_preset_intimate_desc">Свободный ролевой текст с мягким неоновым свечением вокруг</string>
+    <string name="chat_preset_demo_bot_message">Привет! Как продвигается наше путешествие?</string>
+    <string name="chat_preset_demo_user_message">Всё отлично, двигаемся по плану!</string>
+    <string name="chat_preset_demo_rpg_message">**Дождь стучит по крыше.**\n*Она делает глоток горячего чая.*\n"Рада видеть тебя снова!"\n(Надеюсь, он не заметил, как дрожат мои руки...)\nПутешествие было долгим, и нам обоим нужно согреться.</string>
+    <string name="pwa_install_app">Установить приложение</string>
+    <string name="pwa_update_available">Доступна новая версия. Обновить сейчас?</string>
+    <string name="pwa_update_button">Обновить</string>
+    <string name="pwa_multiple_tabs_error">Из-за ограничений локальной базы данных, одновременная работа в нескольких вкладках недоступна. Пожалуйста, закройте эту вкладку и используйте основную.</string>
+    <string name="pwa_ios_install_title">Установка на iOS</string>
+    <string name="pwa_ios_install_instruction">Нажмите кнопку «Поделиться» внизу экрана (квадрат со стрелкой вверх), а затем выберите «На экран Домой».</string>
+    <string name="pwa_ios_install_dismiss">Понятно</string>
+
+    <!-- User AI Settings Screen -->
+    <string name="user_ai_settings_title">Настройки ИИ</string>
+    <string name="user_ai_section_connection">ПОДКЛЮЧЕНИЕ И КЛЮЧИ</string>
+    <string name="user_ai_section_models">МОДЕЛИ ИИ</string>
+    <string name="user_ai_provider">Провайдер ИИ</string>
+    <string name="user_ai_api_key">API Ключ</string>
+    <string name="user_ai_api_key_placeholder">Не задан (нажмите для ввода)</string>
+    <string name="user_ai_switch_title">Свой AI Провайдер</string>
+    <string name="user_ai_switch_desc">Использовать собственные API-ключи вместо стандартных серверов Avalon</string>
+    
+    <!-- User AI Guide -->
+    <string name="user_ai_guide_category">КАК ЭТО РАБОТАЕТ?</string>
+    <string name="user_ai_guide_title">Инструкция и гайд по ИИ</string>
+    <string name="user_ai_guide_subtitle">Что такое API, OpenRouter и как подключить</string>
+    <string name="user_ai_guide_sheet_title">Свои ключи и модели ИИ</string>
+    <string name="user_ai_guide_sheet_desc">Подключение личных API-ключей дает вам неограниченный доступ к топовым мировым моделям без лимитов и очередей.</string>
+    <string name="user_ai_guide_step1_title">Что такое OpenRouter и API?</string>
+    <string name="user_ai_guide_step1_desc">API-ключ — это персональный доступ к серверам нейросетей. OpenRouter объединяет в себе все ведущие модели: Claude 3.7, GPT-4.5, Gemini 2.5, Flux и другие в одном аккаунте.</string>
+    <string name="user_ai_guide_step2_title">Шаг 1. Получите API-ключ</string>
+    <string name="user_ai_guide_step2_desc">Зарегистрируйтесь на openrouter.ai (или у выбранного провайдера), пополните баланс и в разделе Keys создайте свой секретный ключ.</string>
+    <string name="user_ai_guide_step3_title">Шаг 2. Вставьте ключ в Avalon</string>
+    <string name="user_ai_guide_step3_desc">Включите тумблер «Свой AI Провайдер» на этом экране и сохраните ваш ключ в поле «API Ключ».</string>
+    <string name="user_ai_guide_step4_title">Шаг 3. Настройте и проверьте модели</string>
+    <string name="user_ai_guide_step4_desc">Выберите желаемые модели для чата, озвучки и картинок. При сохранении система автоматически проверит доступность модели через ваш ключ.</string>
+    <string name="user_ai_guide_got_it">Понятно</string>
+
+    <!-- User AI Bottom Sheets -->
+    <string name="user_ai_provider_picker_title">Выбор AI Провайдера</string>
+    <string name="user_ai_provider_picker_desc">Выберите сервис, через который будут отправляться запросы к моделям.</string>
+    <string name="user_ai_provider_selected">Выбрано</string>
+    <string name="user_ai_provider_recommended">Рекомендуется</string>
+    <string name="user_ai_provider_official_gateway">Официальный шлюз</string>
+    <string name="user_ai_provider_custom_gateway">Пользовательский шлюз</string>
+
+    <!-- Select AI Provider Screen -->
+    <string name="select_ai_provider_screen_title">Выбор ИИ-провайдера</string>
+    <string name="select_ai_provider_screen_subtitle">Выберите сервис для генерации ответов. Поддерживается прямое подключение ключей от официальных провайдеров.</string>
+    <string name="select_ai_provider_get_key_btn">Получить API-ключ ↗</string>
+    <string name="select_ai_provider_select_btn">Выбрать</string>
+    <string name="select_ai_provider_active_badge">Активен</string>
+    <string name="select_ai_provider_free_badge">Бесплатный тариф</string>
+    <string name="select_ai_provider_speed_badge">Сверхскорость</string>
+    <string name="select_ai_provider_all_models_badge">200+ Моделей</string>
+    <string name="select_ai_provider_how_to_title">Как это работает?</string>
+    <string name="select_ai_provider_how_to_desc">1. Нажмите «Получить API-ключ» и создайте ключ на официальном сайте провайдера.\n2. Выберите провайдера и вставьте скопированный ключ в настройках.\n3. Общайтесь с персонажами напрямую без задержек и ограничений!</string>
+
+    <!-- Provider Descriptions -->
+    <string name="user_ai_provider_desc_openrouter">Единый доступ ко всем мировым нейросетям: Claude 3.7, GPT-4.5, Gemini 2.5, Flux и др.</string>
+    <string name="user_ai_provider_desc_openai">Прямой доступ к API OpenAI (модели GPT, DALL-E, Whisper, TTS)</string>
+    <string name="user_ai_provider_desc_anthropic">Прямой доступ к Claude 3.7 Sonnet и Claude 3.5 Haiku</string>
+    <string name="user_ai_provider_desc_google">Бесплатный доступ к топовым моделям Gemini 2.5 Flash и Pro. Получите бесплатный ключ на aistudio.google.com</string>
+    <string name="user_ai_provider_desc_deepseek">Официальный API DeepSeek (DeepSeek V3 и Reasoning R1)</string>
+    <string name="user_ai_provider_desc_groq">Сверхбыстрый инференс открытых моделей (Llama 3.3, Whisper)</string>
+    <string name="user_ai_provider_desc_custom">Пользовательский OpenAI-совместимый эндпоинт</string>
+    
+    <string name="user_ai_api_key_sheet_desc">Ключ доступа к выбранному провайдеру (например, sk-or-v1-...). Хранится на сервере в зашифрованном виде.</string>
+    <string name="user_ai_api_key_input_hint">Введите API ключ...</string>
+    <string name="user_ai_api_key_verify_and_save">Проверить и сохранить</string>
+    <string name="user_ai_api_key_verifying">Проверка ключа...</string>
+    <string name="user_ai_save">Сохранить</string>
+    <string name="user_ai_enter_key_to_unlock_models">Введите API-ключ выше, чтобы открыть настройку моделей</string>
+    <string name="user_ai_error_key_required_for_test">Для настройки моделей сначала введите API-ключ в настройках</string>
+    
+    <string name="user_ai_edit_model_test_switch">Тестировать перед сохранением</string>
+    <string name="user_ai_edit_model_test_switch_desc">Отправляет тестовый запрос к провайдеру для проверки модели</string>
+    <string name="user_ai_edit_model_test_success">Подключение успешно проверено!</string>
+    <string name="user_ai_edit_model_testing">Проверка подключения...</string>
+    <string name="user_ai_edit_model_save">Сохранить модель</string>
+    <string name="user_ai_edit_model_banner_title">Как работает память диалога?</string>
+    <string name="user_ai_edit_model_banner_subtitle">Посмотреть наглядную схему и анимацию работы</string>
+
+    <string name="user_ai_catalog_recommended">🔥 Рекомендуемые</string>
+    <string name="user_ai_catalog_all">Все доступные модели</string>
+    <string name="user_ai_catalog_custom">Ввести модель вручную</string>
+    <string name="user_ai_catalog_search_hint">Поиск модели...</string>
+    <string name="user_ai_catalog_context">Контекст</string>
+    <string name="user_ai_catalog_price">Цена</string>
+    <string name="user_ai_catalog_loading">Загрузка каталога моделей...</string>
+    <string name="user_ai_catalog_empty">Модели не найдены</string>
+
+    <!-- Model Types -->
+    <string name="user_ai_model_text_title">Модель диалога</string>
+    <string name="user_ai_model_text_desc">Основная языковая модель для общения с персонажами. Отвечает за характер, стиль, интеллект и логику ответов.</string>
+    <string name="user_ai_model_text_hint">Популярные: google/gemini-2.5-flash, anthropic/claude-3.7-sonnet, openai/gpt-4o</string>
+
+    <string name="user_ai_model_tts_title">Синтез речи (TTS)</string>
+    <string name="user_ai_model_tts_desc">Используется для генерации голосовых сообщений и аудио-звонков персонажа.</string>
+    <string name="user_ai_model_tts_hint">Популярные: openai/tts-1, openai/tts-1-hd</string>
+
+    <string name="user_ai_model_image_title">Генерация изображений</string>
+    <string name="user_ai_model_image_desc">Создает фотографии, селфи и сюжетные арты персонажа по ходу диалога.</string>
+    <string name="user_ai_model_image_hint">Популярные: black-forest-labs/flux-1-schnell, black-forest-labs/flux-1-dev</string>
+
+    <string name="user_ai_model_prompt_title">Промпты для фото</string>
+    <string name="user_ai_model_prompt_desc">LLM-модель, которая переводит контекст чата и окружение в детальный художественный промпт для генератора картинок.</string>
+    <string name="user_ai_model_prompt_hint">Популярные: google/gemini-2.5-flash, openai/gpt-4o-mini</string>
+
+    <string name="user_ai_model_summary_title">Память и саммари</string>
+    <string name="user_ai_model_summary_desc">Периодически сжимает длинные диалоги в краткую сводку, чтобы персонаж помнил все важные детали прошлых бесед.</string>
+    <string name="user_ai_model_summary_hint">Популярные: google/gemini-2.5-flash-lite, openai/gpt-4o-mini</string>
+
+    <!-- Summary Explanation Screen -->
+    <string name="summary_screen_top_bar_title">Память и Саммари</string>
+    <string name="summary_screen_header_title">Как устроена память диалога</string>
+    <string name="summary_screen_header_desc">Механизм циклического сжатия контекста Avalon AI позволяет персонажу помнить детали даже сотен сообщений без потери скорости и лишнего расхода токенов.</string>
+    <string name="summary_screen_benefits_section">Преимущества и советы</string>
+    
+    <string name="summary_step_1_tab">1. Накопление</string>
+    <string name="summary_step_2_tab">2. Порог 50</string>
+    <string name="summary_step_3_tab">3. Сжатие</string>
+    <string name="summary_step_4_tab">4. Цикл</string>
+
+    <string name="summary_btn_prev">← Назад</string>
+    <string name="summary_btn_next">Далее →</string>
+    <string name="summary_btn_auto_on">Авто (вкл)</string>
+    <string name="summary_btn_auto_off">Авто (выкл)</string>
+
+    <string name="summary_step_1_title">Шаг 1: Активный контекст диалога</string>
+    <string name="summary_step_1_desc">Вы общаетесь с персонажем. Первые 40 сообщений свободно хранятся в активной памяти модели.</string>
+    <string name="summary_step_1_msg_1">Сообщения 1..10</string>
+    <string name="summary_step_1_msg_1_sub">Начало истории, приветствие</string>
+    <string name="summary_step_1_msg_2">Сообщения 11..20</string>
+    <string name="summary_step_1_msg_2_sub">Развитие сюжета, факты</string>
+    <string name="summary_step_1_msg_3">Сообщения 21..30</string>
+    <string name="summary_step_1_msg_3_sub">Диалог, эмоции персонажа</string>
+    <string name="summary_step_1_msg_4">Сообщения 31..40</string>
+    <string name="summary_step_1_msg_4_sub">Текущие ответы</string>
+    <string name="summary_step_1_gauge">Контекст в норме (быстрые ответы)</string>
+    <string name="summary_msg_count_suffix">сообщ.</string>
+
+    <string name="summary_step_2_title">Шаг 2: Достижение лимита (50 сообщений)</string>
+    <string name="summary_step_2_desc">Накопилось 50 сообщений. Первые 10 старых сообщений выделяются для отправки на сжатие в Саммари-модель.</string>
+    <string name="summary_step_2_msg_highlight">⚡ Сообщения 1..10 (Отправляются в Саммари)</string>
+    <string name="summary_step_2_msg_highlight_sub">Самые старые 10 сообщений идут на сжатие</string>
+    <string name="summary_step_2_msg_new">Сообщения 41..50 (Новые)</string>
+    <string name="summary_step_2_msg_new_sub">Свежие реплики</string>
+    <string name="summary_step_2_msg_keep_sub">Остаются в памяти</string>
+    <string name="summary_step_2_gauge">Порог 50 достигнут → запуск сжатия</string>
+
+    <string name="summary_step_3_title">Шаг 3: Сжатие в «Кристалл памяти»</string>
+    <string name="summary_step_3_desc">10 старых сообщений превращаются в 1 емкую карточку воспоминания. В контексте снова свободно: 1 Саммари + 40 сообщений!</string>
+    <string name="summary_step_3_crystal_title">✨ Кристалл Памяти #1 (Сжато из 1..10)</string>
+    <string name="summary_step_3_crystal_desc">«Юзер рассказал о своих планах, персонаж согласился помочь и узнал его имя»</string>
+    <string name="summary_step_3_msg_active_sub">Активный чат</string>
+    <string name="summary_step_3_gauge">1 Саммари + 40 свежих сообщений (-35% токенов)</string>
+
+    <string name="summary_step_4_title">Шаг 4: Бесконечный цикл памяти</string>
+    <string name="summary_step_4_desc">Когда диалог снова вырастает до 50 сообщений: [Саммари #1] + [сообщения 11..20] сжимаются в [Саммари #2]. История не теряется никогда!</string>
+    <string name="summary_step_4_crystal_title">🔄 Кристалл Памяти #2 (Сжато #1 + 11..20)</string>
+    <string name="summary_step_4_crystal_desc">«Объединены все прошлые события с 1 по 20 сообщение»</string>
+    <string name="summary_step_4_msg_new">Сообщения 51..60 (Новые)</string>
+    <string name="summary_step_4_gauge">Память на 1000+ сообщений без тормозов!</string>
+
+    <string name="summary_benefit_1_title">Мгновенные ответы и экономия</string>
+    <string name="summary_benefit_1_desc">Вместо отправки истории из 300 сообщений каждый раз в сеть уходит только ~40 последних реплик и 1 карточка саммари. Это сокращает расход токенов до 80% и ускоряет ответ ИИ.</string>
+    <string name="summary_benefit_2_title">Сюжет не забывается</string>
+    <string name="summary_benefit_2_desc">Саммари-модель сохраняет факты, договоренности, имена и характер отношений. Даже если диалог длится месяцами, персонаж не потеряет нить сюжета.</string>
+    <string name="summary_benefit_3_title">Какую модель выбрать?</string>
+    <string name="summary_benefit_3_desc">Для саммари лучше всего подходят быстрые и экономичные модели:\n• google/gemini-2.0-flash-001\n• anthropic/claude-3-haiku\n• openai/gpt-4o-mini</string>
+
+    <!-- Lorebook (World Info) -->
+    <string name="lorebook_title">База знаний (Lorebook)</string>
+    <string name="lorebook_section_desc">Настройка статей и правил мира</string>
+    <string name="lorebook_book_settings">Настройки книги знаний</string>
+    <string name="lorebook_name_label">Название базы знаний</string>
+    <string name="lorebook_name_placeholder">Например: Хроники королевства</string>
+    <string name="lorebook_description_label">Описание книги</string>
+    <string name="lorebook_description_placeholder">Краткое описание мира или сборника фактов...</string>
+    <string name="lorebook_scan_depth_label">Глубина сканирования (сообщений)</string>
+    <string name="lorebook_token_budget_label">Лимит токенов (необязательно)</string>
+    <string name="lorebook_recursive_scanning">Рекурсивное сканирование</string>
+    <string name="lorebook_recursive_scanning_desc">Разрешить активным статьям запускать поиск других статей</string>
+    <string name="lorebook_entries_title">Статьи базы знаний</string>
+    <string name="lorebook_add_entry">Добавить запись</string>
+    <string name="lorebook_add_entry_short">Запись</string>
+    <string name="lorebook_add_first_entry">Добавить первую запись</string>
+    <string name="lorebook_empty_entries">Статей пока нет.\nДобавьте первую запись, чтобы персонаж помнил факты о мире, местах и правилах!</string>
+    <string name="lorebook_saving">Сохранение...</string>
+    <string name="lorebook_saved">Сохранено</string>
+    <string name="lorebook_create_book_button">Создать базу знаний</string>
+    <string name="lorebook_entry_comment_label">Название / Комментарий</string>
+    <string name="lorebook_entry_comment_placeholder">Например: Королевский замок</string>
+    <string name="lorebook_entry_keys_label">Ключи активации (через запятую)</string>
+    <string name="lorebook_entry_keys_placeholder">замок, королевство, трон</string>
+    <string name="lorebook_entry_secondary_keys_label">Вторичные ключи (для выборочных)</string>
+    <string name="lorebook_entry_secondary_keys_placeholder">король, стража, величие</string>
+    <string name="lorebook_entry_content_label">Текст статьи / Факт</string>
+    <string name="lorebook_entry_content_placeholder">Опишите факт или знание, которое будет передано ИИ при активации...</string>
+    <string name="lorebook_entry_position_label">Позиция в промпте</string>
+    <string name="lorebook_entry_position_before">Перед персонажем</string>
+    <string name="lorebook_entry_position_personality">В личность</string>
+    <string name="lorebook_entry_position_scenario">В сценарий</string>
+    <string name="lorebook_entry_position_after">После персонажа</string>
+    <string name="lorebook_entry_position_at_depth">В диалог</string>
+    <string name="lorebook_entry_constant">Константа (всегда активна)</string>
+    <string name="lorebook_entry_constant_desc">Всегда добавлять в промпт, независимо от ключей в диалоге</string>
+    <string name="lorebook_entry_selective">Выборочная (требует вторичный ключ)</string>
+    <string name="lorebook_entry_selective_desc">Активируется только при совпадении основного и вторичного ключа</string>
+    <string name="lorebook_entry_regex">Использовать Regex</string>
+    <string name="lorebook_entry_regex_desc">Трактовать ключи как регулярные выражения</string>
+    <string name="lorebook_entry_order_label">Приоритет вставки</string>
+    <string name="lorebook_edit_entry_title">Редактирование статьи</string>
+    <string name="lorebook_new_entry_title">Новая запись</string>
+    <string name="lorebook_save_entry_button">Применить статью</string>
+    <string name="lorebook_delete_entry">Удалить статью</string>
+    <string name="lorebook_error_name_empty">Название базы знаний не может быть пустым</string>
+    <string name="lorebook_error_keys_or_content_empty">Ключи и текст статьи не могут быть пустыми</string>
+    <string name="lorebook_save_settings">Сохранить настройки книги</string>
+    <string name="lorebook_settings_saved">Настройки сохранены</string>
+    <string name="lorebook_default_name">База знаний</string>
+    <string name="lorebook_token_budget_placeholder">500 (по умолчанию)</string>
+    <string name="lorebook_entry_fallback_key">Ключ: %1$s</string>
+    <string name="lorebook_entry_fallback_title">Запись #%1$d</string>
+    <string name="lorebook_badge_pos_before">До персонажа</string>
+    <string name="lorebook_badge_pos_after">После персонажа</string>
+    <string name="lorebook_badge_constant">Постоянная</string>
+    <string name="lorebook_badge_selective">Выборочная</string>
+    <string name="lorebook_badge_regex">Regex</string>
+    <string name="lorebook_badge_priority">Приоритет: %1$d</string>
+    <string name="lorebook_entry_keys_prefix">Ключи: %1$s</string>
+    <string name="lorebook_entry_secondary_keys_prefix">Вторичные: %1$s</string>
+    <string name="lorebook_entry_keys_section_title">Ключи активации</string>
+    <string name="lorebook_entry_secondary_keys_section_title">Вторичные ключи</string>
+    <string name="lorebook_entry_constant_no_keys">Постоянная статья (активна всегда)</string>
+    <string name="lorebook_edit_entry_action">Изменить</string>
+    <string name="lorebook_entry_symbols_count">%1$d симв.</string>
+    <string name="lorebook_error_keys_or_constant">Укажите хотя бы один ключ или включите \'Постоянная\'</string>
+    <string name="lorebook_error_content_empty">Текст статьи не может быть пустым</string>
+    <string name="lorebook_error_failed_to_load">Не удалось загрузить базу знаний</string>
+    <string name="lorebook_error_failed_to_save_entry">Не удалось сохранить статью</string>
+    <string name="lorebook_error_failed_to_delete_entry">Не удалось удалить статью</string>
+    <string name="lorebook_error_failed_to_toggle_entry">Не удалось переключить статью</string>
+    <string name="lorebook_error_failed_to_save_settings">Не удалось сохранить настройки</string>
+    <string name="lorebook_public_label">Публичная книга знаний</string>
+    <string name="lorebook_public_desc">Сделать эту книгу доступной для других пользователей в публичном каталоге</string>
+    <string name="lorebook_readonly_banner">Это чужая книга знаний (только для чтения). Чтобы редактировать её или добавлять статьи, создайте свою копию.</string>
+    <string name="lorebook_fork_button">Создать свою копию</string>
+    <string name="lorebook_fork_success">Копия книги успешно создана в вашей библиотеке!</string>
+    <string name="lorebook_error_failed_to_fork">Не удалось создать копию книги</string>
+    <string name="character_lorebooks_title">Базы знаний персонажа</string>
+    <string name="character_lorebooks_subtitle">Управление книгами знаний и фактами, активными в чате с персонажем</string>
+    <string name="character_lorebooks_empty">К персонажу пока не подключено ни одной книги знаний.\nПодключите книги из своей библиотеки или создайте новую!</string>
+    <string name="character_lorebooks_attach_from_library">Из библиотеки</string>
+    <string name="character_lorebooks_create_new">Новая книга</string>
+    <string name="character_lorebooks_badge_primary">Основная</string>
+    <string name="character_lorebooks_badge_my">Моя книга</string>
+    <string name="character_lorebooks_badge_public">Публичная</string>
+    <string name="character_lorebooks_make_primary">Сделать основной</string>
+    <string name="character_lorebooks_primary_hint">Основная книга встраивается при экспорте персонажа в V3</string>
+    <string name="character_lorebooks_detach">Отвязать</string>
+    <string name="character_lorebooks_detach_confirm_title">Отвязать книгу знаний?</string>
+    <string name="character_lorebooks_detach_confirm_desc">Книга будет отвязана от этого персонажа. Она останется в вашей библиотеке.</string>
+    <string name="character_lorebooks_view_readonly">Просмотр</string>
+    <string name="character_lorebooks_edit">Редактировать</string>
+    <string name="character_lorebooks_entries_count">Статей: %1$d</string>
+    <string name="character_lorebooks_library_sheet_title">Подключить из библиотеки</string>
+    <string name="character_lorebooks_library_empty">В библиотеке нет доступных книг.\nСоздайте новую книгу знаний!</string>
+    <string name="character_lorebooks_create_dialog_title">Создать книгу знаний</string>
+    <string name="character_lorebooks_create_dialog_name_placeholder">Название книги</string>
+    <string name="character_lorebooks_create_dialog_desc_placeholder">Описание (необязательно)</string>
+    <string name="character_lorebooks_create_dialog_public_checkbox">Публичная (доступна всем)</string>
+    <string name="character_lorebooks_create_and_attach">Создать и подключить</string>
+    <string name="character_lorebooks_already_attached">Уже подключена</string>
+    <string name="character_lorebooks_attach_action">Подключить</string>
+    <string name="lorebook_import_btn">Импорт JSON</string>
+    <string name="lorebook_export_btn">Экспорт JSON</string>
+    <string name="lorebook_export_action">Экспорт</string>
+    <string name="lorebook_import_error">Не удалось импортировать книгу знаний</string>
+    <string name="lorebook_export_success_format">Книга знаний сохранена: %1$s</string>
+
+    <!-- Global Lorebooks Screen -->
+    <string name="global_lorebooks_title">Базы знаний</string>
+    <string name="global_lorebooks_tab_catalog">Каталог сообщества</string>
+    <string name="global_lorebooks_tab_library">Моя библиотека</string>
+    <string name="global_lorebooks_search_placeholder">Поиск по базам знаний...</string>
+    <string name="global_lorebooks_empty_catalog">Публичных баз знаний пока нет</string>
+    <string name="global_lorebooks_empty_search">По запросу ничего не найдено</string>
+    <string name="global_lorebooks_empty_library">В вашей библиотеке пока нет книг</string>
+    <string name="global_lorebooks_author_format">Автор: %1$s</string>
+    <string name="global_lorebooks_author_community">Сообщество</string>
+    <string name="global_lorebooks_badge_my_book">Ваша книга</string>
+    <string name="global_lorebooks_btn_in_library">В библиотеке</string>
+    <string name="global_lorebooks_btn_add_library">Добавить</string>
+    <string name="global_lorebooks_btn_fork">Создать копию</string>
+    <string name="global_lorebooks_added_to_library">Книга добавлена в вашу библиотеку</string>
+    <string name="global_lorebooks_removed_from_library">Книга удалена из библиотеки</string>
+
+    <!-- Lorebook Details Screen -->
+    <string name="lorebook_details_title">База знаний</string>
+    <string name="lorebook_details_entries_title">Статьи книги знаний</string>
+    <string name="lorebook_details_no_entries">В этой базе знаний пока нет статей</string>
+    <string name="lorebook_details_menu_report">Пожаловаться</string>
+    <string name="lorebook_details_menu_delete">Удалить из библиотеки</string>
+    <string name="lorebook_details_report_sent">Жалоба отправлена модераторам</string>
+    <string name="lorebook_details_report_error">Не удалось отправить жалобу: %1$s</string>
+    <string name="lorebook_details_edit_action">Редактировать книгу</string>
+
+    <!-- Lorebook Cover -->
+    <string name="lorebook_cover_title">Обложка книги</string>
+    <string name="lorebook_cover_hint">Выберите изображение обложки (вертикальная 3:4)</string>
+    <string name="lorebook_cover_change">Сменить обложку</string>
+    <string name="lorebook_cover_upload">Загрузить обложку</string>
+    <string name="lorebook_cover_delete">Удалить обложку</string>
+    <string name="lorebook_cover_upload_error">Не удалось загрузить обложку</string>
+
+    <!-- Character Profile Lorebooks & Prompts -->
+    <string name="character_profile_lorebooks_title">Книги знаний (Лор)</string>
+    <string name="character_profile_lorebooks_manage">Управление лорбуками</string>
+    <string name="character_profile_lorebooks_empty">Книги знаний пока не подключены</string>
+    <string name="character_profile_badge_canon">Канон</string>
+    <string name="character_profile_badge_user">Ваша книга</string>
+    <string name="character_profile_lorebooks_add">Подключить книгу знаний</string>
+    <string name="character_profile_detach_lorebook_title">Открепить книгу знаний?</string>
+    <string name="character_profile_detach_lorebook_desc">Книга перестанет дополнять диалог с этим персонажем.</string>
+
+    <!-- Add Character Lorebook Stage -->
+    <string name="add_character_lorebook_stage_title">Книга знаний</string>
+    <string name="add_character_lorebook_stage_desc">Прикрепите книгу знаний из библиотеки или создайте новую. Шаг опционален — можно продолжить без книги.</string>
+    <string name="add_character_lorebook_not_selected">Книга знаний не выбрана</string>
+    <string name="add_character_lorebook_change">Сменить книгу</string>
+</resources>

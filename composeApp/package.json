@@ -1,0 +1,13 @@
+{
+  "name": "compose-app-pwa",
+  "version": "1.0.0",
+  "private": true,
+  "description": "PWA dependencies for Avalon Avatars Compose Wasm",
+  "scripts": {
+    "workbox": "workbox injectManifest workbox-config.js"
+  },
+  "devDependencies": {
+    "workbox-cli": "^7.1.0",
+    "workbox-window": "^7.1.0"
+  }
+}

@@ -1,0 +1,29 @@
+services:
+  # ── PostgreSQL Database (17+) ──
+  db:
+    image: postgres:17-alpine
+    container_name: avalon-postgres
+    restart: always
+    environment:
+      POSTGRES_DB: ${DB_NAME:-avalon_chat}
+      POSTGRES_USER: ${DB_USER:-postgres}
+      POSTGRES_PASSWORD: ${DB_PASSWORD:-postgres}
+    ports:
+      - "127.0.0.1:5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+  # ── Redis Cache ──
+  redis:
+    image: redis:7-alpine
+    container_name: avalon-redis
+    restart: always
+    ports:
+      - "127.0.0.1:6379:6379"
+    volumes:
+      - redis_data:/data
+    command: redis-server --appendonly yes
+
+volumes:
+  postgres_data:
+  redis_data:

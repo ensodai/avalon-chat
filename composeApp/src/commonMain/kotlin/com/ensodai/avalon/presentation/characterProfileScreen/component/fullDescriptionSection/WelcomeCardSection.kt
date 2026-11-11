@@ -1,0 +1,3 @@
+package com.ensodai.avalon.presentation.characterProfileScreen.component.fullDescriptionSection
+
+class WelcomeCardSection

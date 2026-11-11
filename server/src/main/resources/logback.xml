@@ -1,0 +1,36 @@
+<configuration>
+
+    <!-- 1. НАСТРОЙКА КОНСОЛИ (Для LLM, WSS, HTTP, Debug) -->
+    <appender name="STDOUT" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 2. НАСТРОЙКА ФАЙЛА (Только для Payments) -->
+    <appender name="PAYMENT_FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>/app/logs/payments.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>/app/logs/payments.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>30</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <!-- В файле цвета не нужны, пишем просто текст и дату -->
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} %-5level - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 3. ПРАВИЛО ДЛЯ ПЛАТЕЖЕЙ -->
+    <!-- name="Payments" — ловим логгер с таким именем -->
+    <!-- additivity="false" — НЕ отправлять эти логи в общий котел (в консоль) -->
+    <logger name="Payments" level="INFO" additivity="false">
+        <appender-ref ref="PAYMENT_FILE" />
+    </logger>
+
+    <!-- 4. ОБЩЕЕ ПРАВИЛО (ROOT) -->
+    <!-- Сюда попадут: "HTTP", "LLM", "WSS", "DEBUG" и системные логи Ktor -->
+    <root level="INFO">
+        <appender-ref ref="STDOUT" />
+    </root>
+
+</configuration>

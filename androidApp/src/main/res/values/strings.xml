@@ -1,0 +1,7 @@
+<resources>
+
+    <!-- Crash Screen -->
+    <string name="crash_title">The app encountered an error</string>
+    <string name="crash_description">You can clear local data and restart the app.</string>
+    <string name="crash_button_fix_and_restart">Fix and restart</string>
+</resources>

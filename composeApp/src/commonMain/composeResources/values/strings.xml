@@ -1,0 +1,1031 @@
+<resources>
+    <string name="app_name">Avalon avatars</string>
+    <string name="terms_of_service_url" translatable="false">https://github.com/your-username/avalon-chat/blob/main/TERMS.md</string>
+    <string name="privacy_policy_url" translatable="false">https://github.com/your-username/avalon-chat/blob/main/PRIVACY.md</string>
+
+    <string name="delete_api_key">Delete api key ?</string>
+    <string name="settings">Settings</string>
+    <string name="customization">Customization</string>
+    <string name="flow_mode">FlowMode</string>
+    <string name="local_mode" translatable="false">LocalMode</string>
+    <string name="auto_replace_api_keys">AutoReplace api keys</string>
+    <string name="language">Language</string>
+    <string name="add">Add</string>
+    <string name="cancel">Cancel</string>
+    <string name="cancel_big">CANCEL</string>
+    <string name="api_keys">Api keys</string>
+    <string name="ok">OK</string>
+    <string name="delete_selected_chats">Delete selected chats</string>
+    <string name="no_messages_yet">No messages yet</string>
+    <string name="chats">Chats</string>
+    <string name="edit_chat">Edit</string>
+    <string name="create_chat">Create chat</string>
+    <string name="safety_settings">Safety Settings</string>
+    <string name="harassment">Harassment</string>
+    <string name="hate">Hate</string>
+    <string name="sexually_explicit">Sexually Explicit</string>
+    <string name="dangerous_content">Dangerous Content</string>
+    <string name="block_none">Block none</string>
+    <string name="block_few">Block few</string>
+    <string name="block_some">Block some</string>
+    <string name="block_most">Block most</string>
+    <string name="show_always">Always show regardless of probability of being harmful</string>
+    <string name="block_high">Block high probability of being harmful</string>
+    <string name="block_medium_high">Block medium or high probability of being harmful</string>
+    <string name="block_low_medium_high">Block low, medium and high probability of being harmful</string>
+    <string name="auto_delete_messages">Auto-delete messages</string>
+    <string name="temperature">Temperature</string>
+    <string name="model">Model</string>
+    <string name="instructions">Instructions</string>
+    <string name="name">Name</string>
+    <string name="safety_setting_reminder">Safety Setting Reminder</string>
+    <string name="google_message">This message from google ai studio</string>
+    <string name="terms_agreement">
+    \"In our Terms[Terms](https://ai.google.dev/gemini-api/terms), you agree to follow applicable law and our [Use Policy](https://policies.google.com/terms/generative-ai/use-policy). You\'re still responsible for complying with those requirements if you lower or disable safety filters. Only do so if your intended use case is appropriate and reasonably and consistently requires those safety filter(s) to be lowered or disabled as there may be unintended content generated. [Learn more](https://ai.google.dev/gemini-api/docs/safety-settings)\"
+    </string>
+    <string name="learn_more">Learn more</string>
+    <string name="terms">Terms</string>
+    <string name="use_policy">Use Policy</string>
+    <string name="turn_filters_off">Turn filters off</string>
+    <string name="keep_filters">Keep filters</string>
+    <string name="advanced_settings">Advanced</string>
+    <string name="top_k">topK</string>
+    <string name="top_p">topP</string>
+    <string name="max_output_tokens">maxOutputTokens</string>
+    <string name="open_settings">Open settings</string>
+    <string name="allow_storage_access">
+    To select an image, please allow access to your device storage in the app settings.
+    </string>
+    <string name="permission_denied">Permission denied</string>
+    <string name="temporary_chat_notice">This is a temporary chat. Message history will be automatically deleted.</string>
+    <string name="typing">typing</string>
+    <string name="text_copied">Text copied to clipboard</string>
+    <string name="edit">Edit</string>
+    <string name="search">Search</string>
+    <string name="new_chat_variant">New chat</string>
+    <string name="all_chat_variants">All chats</string>
+    <string name="clear_history">Clear history</string>
+    <string name="delete_chat">Delete chat</string>
+    <string name="message">Message</string>
+    <string name="online">online</string>
+    <string name="offline">connecting</string>
+    <string name="updating">updating</string>
+    <string name="out_of">out of</string>
+    <string name="api_key_replaced">api key replaced automatically</string>
+    <string name="generation_error">Generation error</string>
+    <string name="view">view</string>
+    <string name="delete_selected_messages">Delete selected messages</string>
+    <string name="delete_all_message_history">Delete all message history</string>
+    <string name="delete_chat_and_all_messages">Delete chat and all messages</string>
+    <string name="save_changes">Save changes</string>
+    <string name="error">Error</string>
+    <string name="app_version">version: </string>
+    <string name="temporary_chat">Temporary Chat</string>
+    <string name="api_key_annotation">You can use your api keys. API keys are securely encrypted and stored only on your device. They are used exclusively for working with Google Gemini AIR services.
+    To get the key, go to the official website of Google AI Studio, click "Get API key" → "Create API key".
+    </string>
+    <string name="ai_studio_website">official website of Google AI Studio</string>
+    <string name="auto_replace_setting_explain_true">If the api key runs out of tokens, it will be automatically replaced with the next one.</string>
+    <string name="auto_replace_setting_explain_false">If the api key runs out of tokens, it will NOT be automatically replaced with the next one.</string>
+    <string name="flow_mode_setting_explain_true">A new message from Gemini will be displayed in the chat gradually during generation.</string>
+    <string name="local_mode_setting_explain_true">If the mod is enabled, all newly created characters are stored only locally on the device, and message generation will only be available with your API keys.</string>
+    <string name="flow_mode_setting_explain_false">A new Message from Gemini will appear in the chat only when it is fully generated.</string>
+    <string name="start_message">Your chats will be here</string>
+    <string name="character_screen_list_start_message">There will be characters here</string>
+    <string name="credits">The app is under development, so it may have bugs. If you have any questions or suggestions, you can write to me on Telegram @ensobaza_bot.</string>
+    <string name="enso_baza">\@ensobaza_bot</string>
+    <string name="topk_explain">The topK parameter changes how the model selects tokens for output. A topK of 1 means the selected token is the most probable among all the tokens in the model\'s vocabulary (also called greedy decoding), while a topK of 3 means that the next token is selected from among the 3 most probable using the temperature. For each token selection step, the topK tokens with the highest probabilities are sampled. Tokens are then further filtered based on topP with the final token selected using temperature sampling.</string>
+    <string name="topp_explain">The topP parameter changes how the model selects tokens for output. Tokens are selected from the most to least probable until the sum of their probabilities equals the topP value. For example, if tokens A, B, and C have a probability of 0.3, 0.2, and 0.1 and the topP value is 0.5, then the model will select either A or B as the next token by using the temperature and exclude C as a candidate. The default topP value is 0.95.</string>
+    <string name="temperature_explain">The higher the temperature, the more creative and unpredictable the responses. The lower it is, the more logical and accurate it is.</string>
+    <string name="max_outpot_tokens_explain">Specifies the maximum number of tokens that can be generated in the response. A token is approximately four characters. 100 tokens correspond to roughly 60–80 words.</string>
+    <string name="insert_the_api_key">Insert the API key</string>
+    <string name="gemini_name" translatable="false">Gemini</string>
+    <string name="promnt_instruction_explain">Enter the instructions for the neural network or leave the field empty for standard responses. If you need a more creative or specific option, specify the details, for example, which tone is more appropriate (formal, informal, friendly, etc.).</string>
+    <string name="temperature_logic">Logic, precision</string>
+    <string name="temperature_creative">Creativity</string>
+    <string name="advanced_setting_explain">Change these settings if you know what you are doing.</string>
+    <string name="avatar">Chat avatar image</string>
+    <string name="complaint_content">Complain about the content</string>
+    <string name="complaint_character">Report</string>
+
+    Default bots:
+    <string name="motivation_buddy">Motivation Buddy</string>
+    <string name="captain">Captain</string>
+    <string name="castle">I woke up in a besieged castle</string>
+    <string name="lisa">Lisa is the chef</string>
+    <string name="creative_assistant">Creative Assistant</string>
+    <string name="detective_story">The detective story</string>
+    <string name="fitness_trainer">Fitness trainer</string>
+    <string name="meme_generator">Meme generator</string>
+    <string name="virtual_dragon">Virtual Dragon Pet</string>
+    <string name="rpg_tavern">RPG Tavern</string>
+    <string name="anna">Anna</string>
+
+    <string name="api_key_guide">
+        \n\n
+        🎉 **How do I get an API key?**\n\n
+        1️⃣ Go to the 👉[official website of Google AI Studio](https://aistudio.google.com)👈\n\n
+        2️⃣ Click **"Get API Key"**\n
+        🔑 This is the button to create the key\n\n
+        3️⃣ Select **"Create API Key"**\n
+        ✨ The system will create your unique key\n\n
+        🎯 It\'s done! Copy the key and paste it in the application settings\n
+    </string>
+    <string name="sign_in">To continue, please sign in</string>
+    <string name="button_login_google">Sign in with Google</string>
+
+    <string name="system_message_authorization_required_1">Hi! It seems you haven\'t logged in yet. Click the button below and we can continue our communication.</string>
+    <string name="system_message_authorization_required_2">Hey, hello! First, we need to make sure that we are familiar. Just click the button to log in.</string>
+    <string name="system_message_authorization_required_3">Welcome! Let\'s get to know each other better by clicking the button below to log in.</string>
+    <string name="system_message_authorization_required_4">Hi! It looks like we haven\'t met yet. Log in by clicking the button, and we\'ll start the conversation!</string>
+    <string name="system_message_authorization_required_5">Hey! To enter the chat, you need to log in. Click the button and start chatting.</string>
+    <string name="system_message_authorization_required_6">Greetings! Let\'s make our conversation more personal — log in by clicking on the button below.</string>
+    <string name="system_message_authorization_required_7">Hi! It seems you haven\'t logged in yet. Click the login button and we will continue!</string>
+    <string name="system_message_authorization_required_8">Hello! To start communicating, you need to log in. Just click on the button below.</string>
+    <string name="system_message_authorization_required_9">Hi! Let\'s get to know each other better. To do this, click the button and log in so that we can communicate further.</string>
+    <string name="system_message_authorization_required_10">Hello, friend! Before we continue, we need to find out who you are. Click the login button and let\'s get to know each other!</string>
+
+    <!-- System chat messages -->
+    <string name="system_message_quota_exceeded">Daily message limit reached. It will reset tomorrow, or you can configure your own API key in settings.</string>
+    <string name="system_message_custom_model_missing">No model selected for generation. Please select a model in AI settings.</string>
+    <string name="system_message_custom_key_invalid">Invalid or expired API key. Please check your key in AI settings.</string>
+    <string name="system_message_custom_insufficient_credits">Insufficient credits on the provider account (OpenRouter). Please top up your balance or change the key.</string>
+    <string name="system_message_custom_rate_limit">Rate limit exceeded for this model. Please wait a moment before sending another message.</string>
+    <string name="system_message_custom_model_not_found">The specified model was not found by the provider. Please verify the model name in settings.</string>
+    <string name="system_message_custom_context_length_exceeded">Conversation context exceeded the limit for this model. Try starting a new topic or switching to a model with a larger context window.</string>
+    <string name="system_message_custom_guardrails_restricted">No endpoints available matching your guardrail restrictions and data policy. Configure: https://openrouter.ai/settings/privacy or choose another model.</string>
+    <string name="system_message_custom_provider_unavailable">The model provider is temporarily unavailable or overloaded. Please try again later or choose another model.</string>
+    <string name="system_message_blocked">This message cannot be processed because it violates safety guidelines.</string>
+    <string name="system_message_image_person_blocked">Generating images of real people is restricted by safety policy.</string>
+    <string name="system_message_image_safety_blocked">Image generation was blocked by safety filters.</string>
+    <string name="system_message_server_error">An error occurred while generating response. Please try again later.</string>
+    <string name="system_message_user_banned">Your account has been suspended for violating terms of service.</string>
+    <string name="sys_btn_ai_settings">AI Settings</string>
+
+    <string name="buy_energy_sheet_title">Recharge Energy</string>
+    <string name="buy_energy_sheet_subtitle">Select a pack to recharge instantly</string>
+    <string name="buy_energy_current_balance">Current balance:</string>
+    <string name="buy_energy_loading_products">Loading packs...</string>
+    <string name="buy_energy_no_products">No packs available</string>
+    <string name="buy_energy_purchase_success">Purchase successful! Energy recharged</string>
+    <string name="buy_energy_daily_quota">Daily: %1$d / %2$d</string>
+    <string name="buy_energy_reserve_balance">Additional: %1$d</string>
+    <string name="buy_energy_purchase_success_subtitle">+%1$d ⚡ successfully added to balance</string>
+    <string name="dialog_success_button">Excellent</string>
+
+    <string name="unsupported_system_message">Unsupported system message</string>
+
+    <!-- Early Supporter Badge & Gratitude -->
+    <string name="supporter_badge_tag">Early Supporter</string>
+    <string name="supporter_badge_title">Thank you for your support! ✨</string>
+    <string name="supporter_badge_subtitle">You made an invaluable contribution to Avalon • Tap to read</string>
+    <string name="supporter_gratitude_title">Thank you for supporting us from day one! ✨</string>
+    <string name="supporter_gratitude_body">Hey there!\n\nWe have retired paid subscriptions in Avalon and transitioned to direct AI model access via custom API keys (OpenRouter &amp; Google AI). This ensures total freedom, higher speeds, and unfiltered access to the world’s best AI models without artificial paywalls.\n\nMost importantly, we will never forget those who believed in us from the very beginning.\n\nYour subscription during our early days made it possible for Avalon to grow, cover infrastructure, and evolve. We are truly grateful for your support and hope our characters brought you great memories.\n\nThis Early Supporter badge is permanently yours as a small token of our gratitude.\n\nWarmly,\nThe Avalon Team 💙</string>
+    <string name="supporter_gratitude_btn">With Gratitude 💙</string>
+
+    <!-- OpenAPI Transition Announcement Banner & BottomSheet -->
+    <string name="announcement_openapi_tag">Important Update</string>
+    <string name="announcement_openapi_title">A New Chapter for Avalon: Custom API Keys ✨</string>
+    <string name="announcement_openapi_subtitle">Paid tiers and quota limits are removed. Connect OpenRouter and Google AI directly • Tap for details</string>
+    <string name="announcement_openapi_sheet_title">Freedom of Choice &amp; Custom API Keys ✨</string>
+    <string name="announcement_openapi_sheet_body">Hey there! We have completely revamped how AI models work in Avalon.\n\n🔹 No more paid subscriptions &amp; quotas\nWe have retired paid subscriptions and artificial daily message caps. Avalon is now open to everyone.\n\n🔹 Direct connection to AI models\nYou can now connect your own API key (e.g. OpenRouter or Google AI) and choose any leading language model with zero markups or artificial walls.\n\n🔹 How to set up?\nHead to \"AI Settings\" (in your profile or navigation menu), enter your API key, and select your preferred model.\n\nThank you for being with us! Enjoy chatting with characters 💙</string>
+    <string name="announcement_openapi_sheet_btn_settings">AI Settings</string>
+    <string name="announcement_openapi_sheet_btn_close">Got It</string>
+
+    <string name="system_message_authorization_bad">❌Something went wrong. Check your details and try again.</string>
+    <string name="system_message_authorization_seccess">✅Login was successful. The character is now available for your questions and discussions.</string>
+
+    <string name="serverClientId" translatable="false">98220617037-7josi11b0ivukm65hpc8rr3f9qgd9215.apps.googleusercontent.com</string>
+
+    <string name="stage_one">Choose the AI character\'s name</string>
+    <string name="description">Description</string>
+    <string name="author">Author</string>
+    <string name="character_name">Character name</string>
+    <string name="continue_button">Continue</string>
+    <string name="back_button">Back</string>
+    <string name="publish">Create</string>
+    <string name="visible">Visible</string>
+    <string name="profile_image">Profile image</string>
+    <string name="add_profile_image_description">Add an image for the AI character</string>
+    <string name="public_setting">Public</string>
+    <string name="public_setting_description">Visible and available to everyone</string>
+    <string name="private_setting">Private</string>
+    <string name="link_only_setting">Link Only</string>
+    <string name="link_only_setting_description">Only visible and available via direct link</string>
+    <string name="private_setting_description">Only visible and available to you</string>
+    <string name="short_description_stage">Short description</string>
+    <string name="full_description_stage">Personality &amp; Character</string>
+    <string name="scenario_stage">Scenario &amp; Setting</string>
+    <string name="scenario_stage_desc">Describe the starting situation and physical surroundings</string>
+    <string name="change_character_scenario">Change scenario</string>
+    <string name="mes_example_stage">Dialogue examples</string>
+    <string name="mes_example_stage_desc">Sample dialogue demonstrating speech patterns and mannerisms</string>
+    <string name="change_character_mes_example">Change dialogue examples</string>
+    <string name="first_message_stage">First message</string>
+    <string name="first_message">The chat will start with this message. You can leave it blank to turn off the first message.</string>
+    <string name="full_description_private">Hidden by privacy settings</string>
+    <string name="full_description_empty">It\'s still empty here</string>
+    <string name="categories_stage">Choose category</string>
+    <string name="full_description">Describe the personality and characteristics of your AI character: personality, habits, communication style, and interests. The more detailed the description, the more accurately the AI reflects your intended personality in its responses.</string>
+    <string name="short_description">Describe the AI character\'s personality, communication style, and features</string>
+    <string name="safety_and_censor_stage">Safety &amp; Moderation</string>
+    <string name="welcome_card_stage">Welcome card</string>
+    <string name="welcome_card_stage_description">Set up a welcome card. It won\'t affect the character, but here you can add metadata, information about the character, the game, or explanations.</string>
+    <string name="safety_and_censor">Change the safety and moderation settings for AI character responses</string>
+    <string name="in_development">IN DEVELOPMENT</string>
+    <string name="add_image">Add image</string>
+    <string name="create">Create</string>
+    <string name="logic">precision, logic</string>
+    <string name="moderation">moderation</string>
+    <string name="creativity">creativity</string>
+    <string name="temperature_stages">How will the character respond?</string>
+    <string name="temperature_stages_description">Set up how logical or creative your character\'s AI responses will be.</string>
+    <string name="save_profile_changes">Save changes</string>
+    <string name="profile_images">Images</string>
+    <string name="private_setting_full_description">Privately</string>
+    <string name="public_setting_full_description">Publicly</string>
+
+    <string name="screen_tab_my_chats">Chats</string>
+    <string name="screen_tab_all_chats">Characters</string>
+
+    <string name="update_character_loading">Character update</string>
+    <string name="update_character_success">The character has been updated</string>
+
+    <string name="add_character_loading">Creating a character 🤖🤖🤖</string>
+    <string name="add_character_success">THE CHARACTER IS CREATED</string>
+    <string name="start_chat">START CHAT</string>
+
+    <string name="delete_account">Delete account</string>
+    <string name="delete_account_explain">The account will be deleted within 24 hours</string>
+
+    <string name="logout">Log out</string>
+
+    <string name="authorization">Log in</string>
+    <string name="app_settings">App settings</string>
+
+    <string name="profile">Profile</string>
+
+    <string name="charges">Charges: fully replenished every hour. 1 charge = 1 message.</string>
+    <string name="one_hour">Hour</string>
+
+    <string name="person">Person:</string>
+    <string name="person_screen">Person</string>
+    <string name="person_off">off</string>
+    <string name="create_new_person">Create a new Persona</string>
+    <string name="create_new_person_button">Create a Persona</string>
+    <string name="persona_save_changes">Save changes</string>
+    <string name="person_name">Name</string>
+    <string name="person_name_placeholder">Person\'s name</string>
+    <string name="person_description">Description</string>
+    <string name="person_description_placeholder">A Person\'s description may include appearance, character, goals, events, and so on.</string>
+    <string name="delete_persona">Delete persona</string>
+    <string name="persona_explain">The characters will remember your name and what you like in order to respond appropriately.</string>
+
+    <string name="archive">Archive</string>
+
+    <string name="service_unavailable">The service is temporarily unavailable, please try again later.🔧</string>
+    <string name="upgrade_required">A new update is available! Bugs have been fixed and stability has been improved. Update the app.</string>
+    <string name="telegram_reminder_text">Avalon avatars Telegram channel, information and news about the project</string>
+    <string name="telegram_avalon_avatars">Telegram channel</string>
+    <string name="open_telegram_failed">Failed to open Telegram</string>
+
+    <string name="stories">Stories</string>
+    <string name="story">Story</string>
+    <string name="change_name">Change name</string>
+    <string name="changed_image">Change image</string>
+    <string name="clear_chat">Clear chat</string>
+    <string name="delete">Delete</string>
+    <string name="change_story_name">Change story name</string>
+    <string name="save">Save</string>
+    <string name="delete_story">Delete story: </string>
+    <string name="change_image">Change image</string>
+    <string name="clear">Clear</string>
+
+    <string name="edit_character_private_photos_title">Private gallery</string>
+    <string name="edit_character_private_photos_desc">Upload private photos that users will unlock with energy.</string>
+    <string name="add_photo_desc">Add photo</string>
+    <string name="private_photo_desc">Private photo</string>
+    <string name="energy_desc">Energy</string>
+    <string name="uploading_new_images">Uploading new images...</string>
+    <string name="paid_photo_settings_title">Paid photo settings</string>
+    <string name="paid_photo_settings_desc">Users will unlock this image with energy</string>
+    <string name="enter_number">Enter a number</string>
+    <string name="min_price_error">Minimum price is 50 energy</string>
+    <string name="max_price_error">Maximum price is 50,000 energy</string>
+    <string name="energy_cost_label">Energy cost (50 - 50,000)</string>
+    <string name="image_settings_title">Photo settings</string>
+    <string name="private_photo_label">Private photo</string>
+    <string name="friendship_level_reward_title">Friendship level reward (optional)</string>
+    <string name="friendship_level_reward_desc">Photo will unlock automatically upon reaching this level</string>
+    <string name="required_friendship_level_label">Required friendship level (1 - 65)</string>
+    <string name="example_level_placeholder">Example: 5</string>
+    <string name="apply_action">Apply</string>
+    <string name="energy_cost_range_error">Price must be from 50 to 50,000</string>
+    <string name="level_range_error">Level must be from 1 to 65</string>
+
+
+    <string name="premium_gallery_title">PRIVATE ALBUM</string>
+    <string name="locked_desc">Locked</string>
+    <string name="level_short">Lvl. %1$d</string>
+    <string name="premium_image_content_description">Premium image %1$d of %2$d</string>
+    <string name="blurred_image_loading_desc">Loading premium image...</string>
+    <string name="blurred_image_desc">Premium image (locked)</string>
+    <string name="available_from_level">Available from level %1$d</string>
+    <string name="unlock_photo">Unlock photo</string>
+    <string name="photo_available_on_level_up">The photo will become available when your relationship level increases.</string>
+    <string name="unlock_photo_confirm_pattern">Do you want to unlock this photo for %1$d energy?</string>
+    <string name="required_level_pattern">Required level: %1$d</string>
+    <string name="unlock_for_energy_pattern">Unlock for ⚡%1$d</string>
+    <string name="close">Close</string>
+    <string name="download">Download</string>
+
+    <string name="untitled_story">Untitled story</string>
+    <plurals name="messages_count">
+        <!-- Когда count = 1 -->
+        <item quantity="one">%d message</item>
+        <!-- Для всех остальных случаев: 0, 2, 3, 10... -->
+        <item quantity="other">%d messages</item>
+    </plurals>
+
+    <string name="unacceptable_content">Unable to generate text. Reason: Google server error or content blocked.</string>
+    <string name="donate">Buy coffee for the developer (donation)</string>
+    <string name="donate_url" translatable="false">https://github.com/sponsors</string>
+
+    <string name="user_name_placeholder">\@user_name</string>
+
+    <string name="nickname_rules">Allowed: English letters (A–Z, a–z), digits (0-9), symbols: _</string>
+    <string name="error_empty">Nickname cannot be empty</string>
+    <string name="error_too_short">Minimum %1$d characters</string>
+    <string name="error_too_long">Maximum %1$d characters</string>
+    <string name="error_invalid_chars">Invalid characters</string>
+    <string name="error_invalid_start_end">Cannot start or end with _ - .</string>
+    <string name="error_consecutive_special">Consecutive symbols not allowed</string>
+    <string name="error_inappropriate">Contains forbidden words</string>
+    <string name="error_system_name">System name not allowed</string>
+    <string name="checking_username">Checking username</string>
+    <string name="this_username_is_already_taken">This username is already taken</string>
+    <string name="connection_error">Connection error</string>
+    <string name="user_name_is_free">User name is free</string>
+    <string name="user_name">User name</string>
+    <string name="cgange_user_name">Change user name</string>
+
+    <string name="description_placeholder">There used to be settings here, but now they are not working. It will be available in the next update.</string>
+
+    <string name="some_message_error">🤷‍♂️ Error</string>
+    <string name="change_character_name">Change name</string>
+    <string name="change_character_description">Change description</string>
+    <string name="change_character_first_message">Change first message</string>
+    <string name="change_character_privacy">Edit privacy</string>
+    <string name="images">IMAGES</string>
+    <string name="add_an_avatar">Add an avatar</string>
+    <string name="a_few_words_about_the_character">A few words about the character…</string>
+    <string name="history_character_habits">History, character, habits…</string>
+    <string name="where_will_the_dialogue_begin">Where will the dialogue begin?</string>
+    <string name="welcome_card">Welcome card</string>
+    <string name="set_up_a_welcome_card">Set up a welcome card</string>
+    <string name="privacy">Privacy</string>
+
+    <string name="neural_entropy">Neural Entropy</string>
+    <string name="neural_entropy_info">Adjust the randomness of the AI model.</string>
+    <string name="neural_03">STRICT LOGIC</string>
+    <string name="neural_07">BALANCED</string>
+    <string name="neural_more_07">CREATIVE CHAOS</string>
+    <string name="neural_03_info">Precise, factual, and deterministic responses. Ideal for assistance and code.</string>
+    <string name="neural_07_info">Natural conversation with a mix of logic and creativity. Best for chatting.</string>
+    <string name="neural_more_07_info">Unpredictable, artistic, and highly imaginative. Good for brainstorming and RPG.</string>
+
+    <string name="user_profile_quota">Energy</string>
+    <string name="user_profile_quota_updated">Updated</string>
+    <string name="user_profile_battery">Batteries</string>
+    <string name="user_profile_battery_in_reserve">In reserve</string>
+
+    <string name="app_broken">Oh no, something\'s broken!</string>
+    <string name="app_broken_2">We\'ve already sent a report to the developers.</string>
+    <string name="app_repair_fix_and_restart">Fix and restart</string>
+
+    <string name="feature_bank_energy">Bank %1$s Energy</string>
+    <string name="feature_custom_backgrounds">Custom Chat Backgrounds</string>
+    <string name="feature_extended_memory">Extended Memory (Better context)</string>
+    <string name="feature_golden_glow">Golden VIP Glow</string>
+    <string name="feature_early_access">Early Access Updates</string>
+
+    <string name="continue_caps_button">CONTINUE</string>
+    <string name="system_upgraded">SYSTEM UPGRADED</string>
+    <string name="plan_status_active_pattern">%1$s STATUS: ACTIVE</string>
+    <string name="upgrade_max_capacity">Max capacity increased to %1$s</string>
+    <string name="upgrade_daily_energy">Max daily energy increased to %1$s</string>
+
+    <string name="price_per_month_pattern">/ month</string>
+    <string name="btn_activate">ACTIVATE</string>
+    <string name="stat_daily_energy">Daily Energy</string>
+    <string name="stat_max_capacity">Max Capacity</string>
+
+    <string name="sub_status_active">Active</string>
+    <string name="sub_valid_until">Next billing date: %1$s</string>
+    <string name="sub_manage_market">Manage in Store</string>
+    <string name="sub_upgrade_title">System Upgrade Available</string>
+    <string name="sub_upgrade_btn">INCREASE POWER LEVEL</string>
+    <string name="sub_current_plan">Current Core Level</string>
+    <string name="sub_promo_free_title">Unlock Premium</string>
+    <string name="sub_promo_free_subtitle">Boost limits, enable voice and premium features</string>
+    <string name="sub_promo_active_title">Subscription %1$s is active</string>
+    <string name="sub_promo_active_subtitle">All premium features are active. Thank you for your support!</string>
+
+    <string name="core_energy">CORE ENERGY</string>
+    <string name="recovery">Recovery</string>
+    <string name="daily_at_utc">Daily at 00:00 UTC</string>
+    <string name="increase_limit">INCREASE LIMIT</string>
+
+    <string name="reserved_storage_title">RESERVED STORAGE</string>
+    <string name="accumulation_title">Accumulation</string>
+    <string name="accumulation_explain">Unused energy for the day is automatically transferred here at 00:00 UTC.</string>
+    <string name="access_title">Access</string>
+    <string name="access_explain">The accumulation feature is only active on paid plans. On the Free plan, energy expires.</string>
+    <string name="btn_close">CLOSE</string>
+
+    <string name="restore_purchase">Restore Purchase</string>
+    <string name="terms_of_service">Terms of Service</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="purchase_agreement_hint">By subscribing, you agree to our %1$s and %2$s.</string>
+
+    <string name="payment_service_disable">We\’re doing some maintenance. Please try again later.</string>
+    <string name="max_tariff_reached">You have reached the maximum tariff level</string>
+    <string name="max_power">MAXIMUM POWER</string>
+    <string name="max_tariff_efficiency_description">Your core is operating at 100% efficiency. Elite status active. No further upgrades required.</string>
+    <string name="return_to_base">RETURN TO BASE</string>
+    <string name="upgrade_in_development">Subscription upgrade in development </string>
+    <string name="await_purchase">Awaiting payment confirmation</string>
+
+    <string name="sub_current_plan_pattern">Current core level: %1$s</string>
+    <string name="recomended_caps">RECOMMENDED</string>
+    <string name="voice_streaming_feature">Voice Messaging (AI Voice)</string>
+    <string name="voice_streaming_free_desc">Unavailable</string>
+    <string name="voice_streaming_paid_desc">All voices available</string>
+    <string name="memory_free_desc">Basic</string>
+    <string name="memory_premium_desc">Basic</string>
+    <string name="memory_crystal_desc">Extended (x3 context)</string>
+    <string name="memory_elite_desc">Maximum</string>
+    <string name="vip_glow_desc">Golden VIP Glow</string>
+    <string name="early_access_desc">Beta-features access</string>
+    <string name="energy_burns_desc">Expires at 00:00 UTC</string>
+    <string name="energy_accumulates_desc">Accumulation up to %1$s</string>
+    <string name="persona_creation_feature">Persona Creation</string>
+    <string name="persona_creation_free_desc">up to 5</string>
+    <string name="persona_creation_paid_desc">Unlimited</string>
+
+    <string name="persona_free_limit_reached">FREE PLAN LIMIT REACHED</string>
+    <string name="persona_limit_description">Remove limits and create an unlimited number of personas.</string>
+    <string name="persona_remove_limit_button">REMOVE LIMITS</string>
+
+    <string name="characters_screen_top_bar">Characters</string>
+
+    <plurals name="deleted_chats_count">
+        <item quantity="one">Deleted %1$d chat</item>
+        <item quantity="other">Deleted %1$d chats</item>
+    </plurals>
+
+    <string name="deleted_character">Deleted character %1$s</string>
+
+    <plurals name="deleted_messages_count">
+        <item quantity="one">Deleted %1$d message</item>
+        <item quantity="other">Deleted %1$d messages</item>
+    </plurals>
+
+    <string name="tap_to_chat">Tap to chat</string>
+    <string name="expand_menu">Expand menu</string>
+
+    <string name="my_characters">My characters</string>
+    <string name="system_instruction_title">System Instruction</string>
+    <string name="remark">Remark</string>
+    <string name="remark_explanation">Hidden remark: Guide the character\'s behavior or add an action. Not visible in chat.</string>
+    <string name="system_instruction_placeholder">e.g.: write to me in a warm, friendly tone</string>
+
+    <string name="chat_item_gift">Gift</string>
+    <string name="chat_item_photo">Photo</string>
+    <string name="chat_draft">Draft</string>
+
+    <string name="image_saved_to_downloads">Saved to ~/Downloads</string>
+    <string name="downloading_image">Downloading image…</string>
+    <string name="microphone_permission_denied">Microphone access denied. Please enable in settings.</string>
+
+    <!-- Live Call Screen -->
+    <string name="livecall_microphone_off">Microphone off</string>
+    <string name="livecall_status_idle">Ready to call</string>
+    <string name="livecall_status_connecting">Connecting…</string>
+    <string name="livecall_status_active">Call active</string>
+    <string name="livecall_status_interrupted">Processing…</string>
+    <string name="livecall_status_reconnecting">Reconnecting…</string>
+    <string name="livecall_status_stopping">Ending…</string>
+    <string name="livecall_status_stopped">Call ended</string>
+    <string name="livecall_mute_enable">Enable microphone</string>
+    <string name="livecall_mute_disable">Disable microphone</string>
+    <string name="livecall_error">Error</string>
+    <string name="livecall_end_call">End call</string>
+    <string name="livecall_start_call">Start call</string>
+    <string name="livecall_select_language">Select language</string>
+    <string name="livecall_select_model">Select model</string>
+    <string name="livecall_unknown_character">Unknown</string>
+    <string name="livecall_gender_male">M</string>
+    <string name="livecall_gender_female">F</string>
+
+    <!-- Customization Screen -->
+    <string name="customization_title">Theme Customization</string>
+    <string name="customization_themes">Themes</string>
+    <string name="customization_bubble_colors">Bubble Colors</string>
+    <string name="customization_bubble_style">Bubble Style</string>
+    <string name="customization_default">Default</string>
+    <string name="customization_selected">Selected</string>
+    <string name="customization_font_size">Font Size</string>
+    <string name="customization_shape">Shape</string>
+    <string name="customization_shape_tail">Tail</string>
+    <string name="customization_shape_rounded">Rounded</string>
+    <string name="customization_shape_soft_corner">Soft Corner</string>
+    <string name="customization_shape_soft">Soft</string>
+    <string name="customization_corner_radius">Corner Radius</string>
+    <string name="customization_preview_bot_message">Hey! How are you? 😊</string>
+    <string name="customization_preview_user_message">I\'m great, thanks!</string>
+    <string name="customization_back">Back</string>
+    <string name="chat_background_title">Chat Background</string>
+    <string name="chat_background_label">CHAT BACKGROUND</string>
+    <string name="add_background">Add background</string>
+    <string name="background_blur">Background blur</string>
+    <string name="chat_media">CHAT MEDIA</string>
+
+    <!-- Outreach Settings -->
+    <string name="outreach_setting_title">Outreach</string>
+    <string name="outreach_setting_allowed_title">Can write first</string>
+    <string name="outreach_setting_allowed_description">Character can initiate chat and send messages to other users first.</string>
+    <string name="outreach_setting_blocked_title">Cannot write first</string>
+    <string name="outreach_setting_blocked_description">Character will never write to other users first.</string>
+    <string name="outreach_setting_title_short">Can write first?</string>
+    <string name="outreach_setting_dialog_title">Can write first?</string>
+
+    <string name="user_outreach_setting_title">Receive messages from characters</string>
+    <string name="user_outreach_setting_description">Allow AI characters to start conversations with you first.</string>
+
+    <!-- Interaction Format Settings -->
+    <string name="interaction_format_setting_title">Interaction Format</string>
+    <string name="interaction_format_setting_title_short">Interaction Format</string>
+    <string name="interaction_format_dialog_title">Interaction Format</string>
+    <string name="interaction_format_literary_rpg_title">Literary RPG</string>
+    <string name="interaction_format_literary_rpg_description">Third-person narration with action descriptions in *asterisks*, focusing on roleplay and storytelling.</string>
+    <string name="interaction_format_chat_simulator_title">Chat Simulator</string>
+    <string name="interaction_format_chat_simulator_description">First-person dialogue formatted as a standard real-time chat, without narration or descriptive actions.</string>
+
+    <!-- Relationship Road Strings -->
+    <string name="relationship_road_title">Friendship Rewards</string>
+    <string name="relationship_road_progress_title">Your Relationship Progress</string>
+    <string name="relationship_road_level_pattern">Level %1$d out of 65</string>
+    <string name="relationship_road_current_xp">Current XP:</string>
+    <string name="relationship_road_hint">Chat with the character to earn XP and level up friendship!</string>
+    <string name="relationship_road_rewards_header">REWARDS ROAD</string>
+    <string name="relationship_road_level_item">Level %1$d</string>
+    <string name="relationship_road_reached">Reached</string>
+    <string name="relationship_road_locked">Locked</string>
+    <string name="relationship_road_two_rewards">2 Rewards</string>
+    <string name="relationship_road_reward_story">Story</string>
+    <string name="relationship_road_reward_bonus">Bonus</string>
+    <string name="relationship_road_hide">Hide</string>
+    <string name="relationship_road_more">Details</string>
+    <string name="relationship_road_no_rewards">No rewards</string>
+    <string name="relationship_road_curiosity_event_title">Story Event</string>
+    <string name="relationship_road_curiosity_event_locked">This story event is locked. Raise your relationship level to unlock and play it in chat!</string>
+
+    <string name="reward_level_5_title">Free Communication</string>
+    <string name="reward_level_5_desc">The character can write to you first in private messages when you are offline. Settings can be updated in the character profile.</string>
+    <string name="reward_level_7_title">Memory Upgrade I</string>
+    <string name="reward_level_7_desc">Dialogue context depth is increased. The character remembers chat details 25% better than baseline.</string>
+    <string name="reward_level_10_title">Friendship Discount 5%</string>
+    <string name="reward_level_10_desc">Every text message to this character now costs 5% less energy (rounding in favor of the user).</string>
+    <string name="reward_level_15_title">Stage: Close Friend</string>
+    <string name="reward_level_15_desc">The character transitions to a trusting relationship phase: they become more caring, share secrets, and memory is improved by 60% of baseline.</string>
+    <string name="reward_level_25_title">Discount 10% + Memory III</string>
+    <string name="reward_level_25_desc">Discount on messages increases to 10%, and the character\'s memory is improved by 100% of baseline.</string>
+    <string name="reward_level_30_title">Stage: Soulmate</string>
+    <string name="reward_level_30_desc">The AI transitions to a deep attachment phase: uses affectionate words, expresses genuine loyalty, and might show minor jealousy.</string>
+    <string name="reward_level_40_title">Memory Upgrade IV</string>
+    <string name="reward_level_40_desc">The character\'s memory is improved by 135% of baseline. Excellent memory for complex roleplay stories.</string>
+    <string name="reward_level_50_title">Discount 15% + Stage: Partner</string>
+    <string name="reward_level_50_desc">Discount reaches maximum at 15%. The character transitions to absolute trust and maximum intimacy.</string>
+    <string name="reward_level_55_title">Memory Upgrade V</string>
+    <string name="reward_level_55_desc">The character\'s memory is improved by 175% of baseline. The character remembers almost all details of a long conversation.</string>
+    <string name="reward_level_65_title">Absolute AI Memory</string>
+    <string name="reward_level_65_desc">Maximum memory limit reached (+210% of baseline). The character remembers the entire timeline of the current story.</string>
+
+    <!-- Character Events Screen -->
+    <string name="character_events_title">Story Events</string>
+    <string name="character_events_info_desc">Story events allow your character to come alive! When a user\'s friendship level reaches the specified milestone, a unique scenario is triggered, and the character\'s personality permanently adapts to this experience.</string>
+    <string name="character_events_empty_state">This character does not have any story events yet.\nClick the button below to create the first event!</string>
+    <string name="character_events_item_title">Event #%1$d</string>
+    <string name="character_events_delete_action">Delete event</string>
+    <string name="character_events_required_level">Required relationship level</string>
+    <string name="character_events_name_label">Story event name</string>
+    <string name="character_events_name_placeholder">Example: First honest conversation</string>
+    <string name="character_events_scenario_label">Story scenario</string>
+    <string name="character_events_scenario_placeholder">Example: You wandered into an abandoned library and found an old diary...</string>
+    <string name="character_events_trait_label">Personality change</string>
+    <string name="character_events_trait_placeholder">Example: Now you remember you have an old diary and become more secretive...</string>
+    <string name="character_events_add_button">Add event</string>
+
+    <string name="character_events_section_desc">Configure story events and personality traits</string>
+    <string name="character_events_error_load">Failed to load events: %1$s</string>
+    <string name="character_events_error_duplicates">Each relationship level must have exactly one event. Duplicates are not allowed.</string>
+    <string name="character_events_error_empty_fields">All fields for names, scenarios, and traits must be filled</string>
+    <string name="character_events_error_save">Failed to save changes: %1$s</string>
+
+    <!-- Friendship Progress Section -->
+    <string name="friendship_progress_header">RELATIONSHIP LEVEL</string>
+    <string name="friendship_progress_level_pattern">Level %1$d</string>
+    <string name="friendship_progress_click_hint">Tap to open friendship rewards road</string>
+
+    <!-- Character Outreach Settings -->
+    <string name="outreach_settings_title">Chat Settings</string>
+    <string name="outreach_settings_section_title">Proactive Messages</string>
+    <string name="outreach_settings_section_desc">Configure proactive settings</string>
+    <string name="outreach_settings_locked_desc">🔒 Unlocks at Relationship Level 5. The character will be able to write to you first in private messages when you are offline!</string>
+    <string name="outreach_settings_unlocked_desc">✨ Configure when the character writes to you first and what topics to chat about.</string>
+    <string name="outreach_settings_allow_label">Allow character to write first</string>
+    <string name="outreach_settings_slot_morning">Morning Messages (09:00 - 12:00)</string>
+    <string name="outreach_settings_slot_afternoon">Afternoon Messages (12:00 - 16:00)</string>
+    <string name="outreach_settings_slot_evening">Evening Messages (18:00 - 21:00)</string>
+    <string name="outreach_settings_prompt_label">Special topic request</string>
+    <string name="outreach_settings_prompt_placeholder">Example: wish me a productive day / remind me to drink water / ask me about work...</string>
+    <string name="outreach_settings_prompt_max_length_error">Special topic request cannot exceed 250 characters</string>
+    <string name="outreach_settings_load_error">Failed to load settings: %1$s</string>
+    <string name="outreach_settings_save_error">Failed to save settings: %1$s</string>
+    <string name="outreach_settings_save_success">Settings saved successfully</string>
+    <string name="outreach_tap_to_configure">Tap to configure</string>
+    <string name="available_from_level_short">Available from lvl. %1$d</string>
+    <string name="add_paid_photos">Add paid photos</string>
+    <string name="ai_warning_text">This is not a real chat, the text is generated using AI. </string>
+    <string name="ai_warning_link">More info</string>
+    <string name="ai_warning_sheet_title">Rules &amp; Safety of Chat</string>
+    <string name="ai_warning_bullet_1_title">Artificial Intelligence</string>
+    <string name="ai_warning_bullet_1_desc">All characters are fictional. Messages are generated automatically and may contain inaccuracies.</string>
+    <string name="ai_warning_bullet_2_title">Not Professional Advice</string>
+    <string name="ai_warning_bullet_2_desc">Do not follow AI advice. Messages do not replace professional medical, legal, or financial help.</string>
+    <string name="ai_warning_bullet_3_title">Data Privacy</string>
+    <string name="ai_warning_bullet_3_desc">Do not share passwords, credit card numbers, addresses, or other sensitive information with the AI.</string>
+    <string name="ai_warning_btn_terms">Terms of Service</string>
+    <string name="ai_warning_btn_privacy">Privacy Policy</string>
+    <string name="ai_warning_sheet_disable_tip">You can disable this warning in the customization settings if you want to see a clean chat.</string>
+    <string name="customization_ai_warning_title">AI Chat Warning</string>
+    <string name="customization_ai_warning_desc">Show AI warning text at the bottom of the chat screen</string>
+    <string name="customization_flow_mode_title">Flow Mode</string>
+    <string name="customization_flow_mode_desc">Show message generation in real-time (token by token) instead of waiting for the full response</string>
+    <string name="customization_advanced_settings">Advanced Settings</string>
+
+    <string name="chat_presets_title">Message Style</string>
+    <string name="chat_presets_apply">Select</string>
+    <string name="chat_presets_applied">Selected</string>
+    <string name="chat_presets_premium_only">Available with Premium</string>
+    <string name="chat_preset_standard_title">Classic Bubbles</string>
+    <string name="chat_preset_standard_desc">Classic dialogue with customizable message clouds</string>
+    <string name="chat_preset_classic_title">Book Novel</string>
+    <string name="chat_preset_classic_desc">Speech in quotation marks, actions of the character in italics</string>
+    <string name="chat_preset_novel_title">Visual Novel</string>
+    <string name="chat_preset_novel_desc">Interactive novel style with a dialog frame and sender name</string>
+    <string name="chat_preset_cyberpunk_title">Cyberpunk Log</string>
+    <string name="chat_preset_cyberpunk_desc">Stylized console log with neon prefixes</string>
+    <string name="chat_preset_cinematic_title">Cinematic Script</string>
+    <string name="chat_preset_cinematic_desc">Hollywood script format with center alignment</string>
+    <string name="chat_preset_rpg_title">Tabletop RPG</string>
+    <string name="chat_preset_rpg_desc">Tabletop game card style with decorative borders</string>
+    <string name="chat_preset_minimal_title">Minimalist</string>
+    <string name="chat_preset_minimal_desc">Sleek layout with dividers instead of bulky clouds</string>
+    <string name="chat_preset_intimate_title">Glow</string>
+    <string name="chat_preset_intimate_desc">Free-form roleplay text with a soft neon glow around</string>
+    <string name="chat_preset_demo_bot_message">Hello! How is our journey going?</string>
+    <string name="chat_preset_demo_user_message">Everything is great, moving according to the plan!</string>
+    <string name="chat_preset_demo_rpg_message">**The rain is tapping on the roof.**\n*She takes a sip of hot tea.*\n\"Glad to see you again!\"\n(I hope he didn\'t notice how my hands are shaking...)\nThe journey was long, and we both need to warm up.</string>
+    <string name="pwa_install_app">Install app</string>
+    <string name="pwa_update_available">New version available. Update now?</string>
+    <string name="pwa_update_button">Update</string>
+    <string name="pwa_multiple_tabs_error">Due to local database limitations, running in multiple tabs simultaneously is not supported. Please close this tab and use the main one.</string>
+    <string name="pwa_ios_install_title">Install on iOS</string>
+    <string name="pwa_ios_install_instruction">Tap the Share button at the bottom of the browser (square with up arrow), then select "Add to Home Screen".</string>
+    <string name="pwa_ios_install_dismiss">Got it</string>
+
+    <!-- User AI Settings Screen -->
+    <string name="user_ai_settings_title">AI Settings</string>
+    <string name="user_ai_section_connection">CONNECTION &amp; KEYS</string>
+    <string name="user_ai_section_models">AI MODELS</string>
+    <string name="user_ai_provider">AI Provider</string>
+    <string name="user_ai_api_key">API Key</string>
+    <string name="user_ai_api_key_placeholder">Not set (tap to enter)</string>
+    <string name="user_ai_switch_title">Custom AI Provider</string>
+    <string name="user_ai_switch_desc">Use your own API keys instead of default Avalon servers</string>
+    
+    <!-- User AI Guide -->
+    <string name="user_ai_guide_category">HOW IT WORKS?</string>
+    <string name="user_ai_guide_title">AI Guide &amp; Instructions</string>
+    <string name="user_ai_guide_subtitle">What is API, OpenRouter, and how to connect</string>
+    <string name="user_ai_guide_sheet_title">Custom Keys &amp; AI Models</string>
+    <string name="user_ai_guide_sheet_desc">Connecting personal API keys gives you unlimited access to top global AI models without queues and standard limits.</string>
+    <string name="user_ai_guide_step1_title">What is OpenRouter and API?</string>
+    <string name="user_ai_guide_step1_desc">An API key is your personal access pass to AI servers. OpenRouter unifies all leading models: Claude 3.7, GPT-4.5, Gemini 2.5, Flux, and more in a single account.</string>
+    <string name="user_ai_guide_step2_title">Step 1. Get an API key</string>
+    <string name="user_ai_guide_step2_desc">Sign up on openrouter.ai (or your preferred provider), top up your balance, and create your secret key in the Keys section.</string>
+    <string name="user_ai_guide_step3_title">Step 2. Paste the key into Avalon</string>
+    <string name="user_ai_guide_step3_desc">Turn on the «Custom AI Provider» switch on this screen and save your key in the «API Key» field.</string>
+    <string name="user_ai_guide_step4_title">Step 3. Configure &amp; verify models</string>
+    <string name="user_ai_guide_step4_desc">Select models for chat, voice synthesis, and image generation. When saving, the system automatically checks model availability with your key.</string>
+    <string name="user_ai_guide_got_it">Got it</string>
+
+    <!-- User AI Bottom Sheets -->
+    <string name="user_ai_provider_picker_title">Select AI Provider</string>
+    <string name="user_ai_provider_picker_desc">Choose the provider through which requests to AI models will be routed.</string>
+    <string name="user_ai_provider_selected">Selected</string>
+    <string name="user_ai_provider_recommended">Recommended</string>
+    <string name="user_ai_provider_official_gateway">Official Gateway</string>
+    <string name="user_ai_provider_custom_gateway">Custom Gateway</string>
+
+    <!-- Select AI Provider Screen -->
+    <string name="select_ai_provider_screen_title">Select AI Provider</string>
+    <string name="select_ai_provider_screen_subtitle">Choose a service for AI generation. Direct connection with your own API keys is fully supported.</string>
+    <string name="select_ai_provider_get_key_btn">Get API Key ↗</string>
+    <string name="select_ai_provider_select_btn">Select</string>
+    <string name="select_ai_provider_active_badge">Active</string>
+    <string name="select_ai_provider_free_badge">Free Tier</string>
+    <string name="select_ai_provider_speed_badge">Ultra Speed</string>
+    <string name="select_ai_provider_all_models_badge">200+ Models</string>
+    <string name="select_ai_provider_how_to_title">How it works?</string>
+    <string name="select_ai_provider_how_to_desc">1. Tap "Get API Key" to create a key on the provider's official portal.\n2. Select the provider and paste your key in AI Settings.\n3. Enjoy direct, unfiltered AI chatting!</string>
+
+    <!-- Provider Descriptions -->
+    <string name="user_ai_provider_desc_openrouter">Unified access to top global AI models: Claude 3.7, GPT-4.5, Gemini 2.5, Flux, and more.</string>
+    <string name="user_ai_provider_desc_openai">Direct access to OpenAI API (GPT models, DALL-E, Whisper, TTS)</string>
+    <string name="user_ai_provider_desc_anthropic">Direct access to Claude 3.7 Sonnet and Claude 3.5 Haiku</string>
+    <string name="user_ai_provider_desc_google">Free access to top Gemini 2.5 Flash &amp; Pro models. Get a free API key at aistudio.google.com</string>
+    <string name="user_ai_provider_desc_deepseek">Official DeepSeek API (DeepSeek V3 and Reasoning R1)</string>
+    <string name="user_ai_provider_desc_groq">Ultra-fast inference for open-source models (Llama 3.3, Whisper)</string>
+    <string name="user_ai_provider_desc_custom">Custom OpenAI-compatible endpoint</string>
+    
+    <string name="user_ai_api_key_sheet_desc">Access key for the chosen provider (e.g., sk-or-v1-...). Stored securely in encrypted form.</string>
+    <string name="user_ai_api_key_input_hint">Enter API key...</string>
+    <string name="user_ai_api_key_verify_and_save">Verify &amp; Save</string>
+    <string name="user_ai_api_key_verifying">Verifying API Key...</string>
+    <string name="user_ai_save">Save</string>
+    <string name="user_ai_enter_key_to_unlock_models">Enter your API key above to configure AI models</string>
+    <string name="user_ai_error_key_required_for_test">Please enter your API key in settings first</string>
+    
+    <string name="user_ai_edit_model_test_switch">Test before saving</string>
+    <string name="user_ai_edit_model_test_switch_desc">Sends a test ping to the provider to verify model availability</string>
+    <string name="user_ai_edit_model_test_success">Connection successfully verified!</string>
+    <string name="user_ai_edit_model_testing">Checking connection...</string>
+    <string name="user_ai_edit_model_save">Save model</string>
+    <string name="user_ai_edit_model_banner_title">How does chat memory work?</string>
+    <string name="user_ai_edit_model_banner_subtitle">View interactive visual diagram &amp; animation</string>
+
+    <string name="user_ai_catalog_recommended">Recommended</string>
+    <string name="user_ai_catalog_all">All Available Models</string>
+    <string name="user_ai_catalog_custom">Custom Model (Enter ID)</string>
+    <string name="user_ai_catalog_search_hint">Search model...</string>
+    <string name="user_ai_catalog_context">Context</string>
+    <string name="user_ai_catalog_price">Price</string>
+    <string name="user_ai_catalog_loading">Loading models catalog...</string>
+    <string name="user_ai_catalog_empty">No models found</string>
+
+    <!-- Model Types -->
+    <string name="user_ai_model_text_title">Chat Model</string>
+    <string name="user_ai_model_text_desc">Main language model for character conversations. Controls personality, style, intelligence, and reasoning.</string>
+    <string name="user_ai_model_text_hint">Popular: google/gemini-2.5-flash, anthropic/claude-3.7-sonnet, openai/gpt-4o</string>
+
+    <string name="user_ai_model_tts_title">Voice Synthesis (TTS)</string>
+    <string name="user_ai_model_tts_desc">Generates character voice messages and live audio calls.</string>
+    <string name="user_ai_model_tts_hint">Popular: openai/tts-1, openai/tts-1-hd</string>
+
+    <string name="user_ai_model_image_title">Image Generation</string>
+    <string name="user_ai_model_image_desc">Creates character photos, selfies, and story artwork during conversations.</string>
+    <string name="user_ai_model_image_hint">Popular: black-forest-labs/flux-1-schnell, black-forest-labs/flux-1-dev</string>
+
+    <string name="user_ai_model_prompt_title">Photo Prompts</string>
+    <string name="user_ai_model_prompt_desc">LLM model that translates conversation context into detailed artistic prompts for the image generator.</string>
+    <string name="user_ai_model_prompt_hint">Popular: google/gemini-2.5-flash, openai/gpt-4o-mini</string>
+
+    <string name="user_ai_model_summary_title">Memory &amp; Summary</string>
+    <string name="user_ai_model_summary_desc">Periodically compresses long dialogs into compact summaries so characters remember story details indefinitely.</string>
+    <string name="user_ai_model_summary_hint">Popular: google/gemini-2.5-flash-lite, openai/gpt-4o-mini</string>
+
+    <!-- Summary Explanation Screen -->
+    <string name="summary_screen_top_bar_title">Memory &amp; Summary</string>
+    <string name="summary_screen_header_title">How Chat Memory Works</string>
+    <string name="summary_screen_header_desc">Avalon AI\'s cyclical context compression mechanism allows characters to remember details across hundreds of messages without slowdowns or token overconsumption.</string>
+    <string name="summary_screen_benefits_section">Benefits &amp; Tips</string>
+    
+    <string name="summary_step_1_tab">1. Accumulation</string>
+    <string name="summary_step_2_tab">2. Limit 50</string>
+    <string name="summary_step_3_tab">3. Compression</string>
+    <string name="summary_step_4_tab">4. Cycle</string>
+
+    <string name="summary_btn_prev">← Back</string>
+    <string name="summary_btn_next">Next →</string>
+    <string name="summary_btn_auto_on">Auto (on)</string>
+    <string name="summary_btn_auto_off">Auto (off)</string>
+
+    <string name="summary_step_1_title">Step 1: Active Dialog Context</string>
+    <string name="summary_step_1_desc">You chat with a character. The first 40 messages are stored directly in the model\'s active memory.</string>
+    <string name="summary_step_1_msg_1">Messages 1..10</string>
+    <string name="summary_step_1_msg_1_sub">Story start, greetings</string>
+    <string name="summary_step_1_msg_2">Messages 11..20</string>
+    <string name="summary_step_1_msg_2_sub">Plot progression, facts</string>
+    <string name="summary_step_1_msg_3">Messages 21..30</string>
+    <string name="summary_step_1_msg_3_sub">Dialog, emotions</string>
+    <string name="summary_step_1_msg_4">Messages 31..40</string>
+    <string name="summary_step_1_msg_4_sub">Current replies</string>
+    <string name="summary_step_1_gauge">Context normal (fast replies)</string>
+    <string name="summary_msg_count_suffix">msgs</string>
+
+    <string name="summary_step_2_title">Step 2: Limit Reached (50 Messages)</string>
+    <string name="summary_step_2_desc">50 messages accumulated. The oldest 10 messages are selected to be compressed by the Summary model.</string>
+    <string name="summary_step_2_msg_highlight">⚡ Messages 1..10 (Sent to Summary)</string>
+    <string name="summary_step_2_msg_highlight_sub">Oldest 10 messages queued for compression</string>
+    <string name="summary_step_2_msg_new">Messages 41..50 (New)</string>
+    <string name="summary_step_2_msg_new_sub">Fresh replies</string>
+    <string name="summary_step_2_msg_keep_sub">Remain in memory</string>
+    <string name="summary_step_2_gauge">Limit 50 reached → starting compression</string>
+
+    <string name="summary_step_3_title">Step 3: Compression into «Memory Crystal»</string>
+    <string name="summary_step_3_desc">10 old messages are condensed into 1 memory card. Context is lightweight again: 1 Summary + 40 messages!</string>
+    <string name="summary_step_3_crystal_title">✨ Memory Crystal #1 (Compressed from 1..10)</string>
+    <string name="summary_step_3_crystal_desc">«User shared plans, character agreed to help and learned user\'s name»</string>
+    <string name="summary_step_3_msg_active_sub">Active chat</string>
+    <string name="summary_step_3_gauge">1 Summary + 40 fresh messages (-35% tokens)</string>
+
+    <string name="summary_step_4_title">Step 4: Infinite Memory Cycle</string>
+    <string name="summary_step_4_desc">When chat reaches 50 messages again: [Summary #1] + [messages 11..20] compress into [Summary #2]. History is never lost!</string>
+    <string name="summary_step_4_crystal_title">🔄 Memory Crystal #2 (Compressed #1 + 11..20)</string>
+    <string name="summary_step_4_crystal_desc">«Merged all key past events from messages 1 to 20»</string>
+    <string name="summary_step_4_msg_new">Messages 51..60 (New)</string>
+    <string name="summary_step_4_gauge">Memory for 1000+ messages without slowdowns!</string>
+
+    <string name="summary_benefit_1_title">Instant Replies &amp; Savings</string>
+    <string name="summary_benefit_1_desc">Instead of sending 300+ messages across the network every turn, only ~40 recent replies and 1 summary card are transferred. This saves up to 80% tokens and speeds up generation.</string>
+    <string name="summary_benefit_2_title">Plot is Never Forgotten</string>
+    <string name="summary_benefit_2_desc">The summary model preserves facts, agreements, names, and relationship dynamics. Even after months of chatting, the character stays in context.</string>
+    <string name="summary_benefit_3_title">Which Model to Choose?</string>
+    <string name="summary_benefit_3_desc">Fast and cost-effective models work best for summary:\n• google/gemini-2.0-flash-001\n• anthropic/claude-3-haiku\n• openai/gpt-4o-mini</string>
+
+    <!-- Lorebook (World Info) -->
+    <string name="lorebook_title">Knowledge Base (Lorebook)</string>
+    <string name="lorebook_section_desc">Configure world info, locations, and lore entries</string>
+    <string name="lorebook_book_settings">Book Settings</string>
+    <string name="lorebook_name_label">Lorebook Name</string>
+    <string name="lorebook_name_placeholder">Example: World Lore</string>
+    <string name="lorebook_description_label">Book Description</string>
+    <string name="lorebook_description_placeholder">Overview of this lorebook...</string>
+    <string name="lorebook_scan_depth_label">Scan Depth (messages)</string>
+    <string name="lorebook_token_budget_label">Token Budget (optional)</string>
+    <string name="lorebook_recursive_scanning">Recursive Scanning</string>
+    <string name="lorebook_recursive_scanning_desc">Allow activated entries to trigger other entries</string>
+    <string name="lorebook_entries_title">Knowledge Entries</string>
+    <string name="lorebook_add_entry">Add Entry</string>
+    <string name="lorebook_add_entry_short">Entry</string>
+    <string name="lorebook_add_first_entry">Add First Entry</string>
+    <string name="lorebook_empty_entries">No entries yet.\nAdd your first lorebook entry to teach the character facts about the world, people, and places!</string>
+    <string name="lorebook_saving">Saving...</string>
+    <string name="lorebook_saved">Saved</string>
+    <string name="lorebook_create_book_button">Create Knowledge Base</string>
+    <string name="lorebook_entry_comment_label">Title / Comment</string>
+    <string name="lorebook_entry_comment_placeholder">Example: Royal Castle</string>
+    <string name="lorebook_entry_keys_label">Activation Keys (comma separated)</string>
+    <string name="lorebook_entry_keys_placeholder">castle, kingdom, throne</string>
+    <string name="lorebook_entry_secondary_keys_label">Secondary Keys (selective)</string>
+    <string name="lorebook_entry_secondary_keys_placeholder">king, guard, royal</string>
+    <string name="lorebook_entry_content_label">Content / Fact</string>
+    <string name="lorebook_entry_content_placeholder">Describe the fact or knowledge that will be injected into the prompt...</string>
+    <string name="lorebook_entry_position_label">Prompt Position</string>
+    <string name="lorebook_entry_position_before">Before character</string>
+    <string name="lorebook_entry_position_personality">In personality</string>
+    <string name="lorebook_entry_position_scenario">In scenario</string>
+    <string name="lorebook_entry_position_after">After character</string>
+    <string name="lorebook_entry_position_at_depth">At depth</string>
+    <string name="lorebook_entry_constant">Constant (Always active)</string>
+    <string name="lorebook_entry_constant_desc">Always inject into prompt regardless of matching keys</string>
+    <string name="lorebook_entry_selective">Selective (Requires secondary keys)</string>
+    <string name="lorebook_entry_selective_desc">Requires at least one secondary key to activate</string>
+    <string name="lorebook_entry_regex">Use Regex</string>
+    <string name="lorebook_entry_regex_desc">Treat activation keys as regular expressions</string>
+    <string name="lorebook_entry_order_label">Insertion Priority</string>
+    <string name="lorebook_edit_entry_title">Edit Entry</string>
+    <string name="lorebook_new_entry_title">New Entry</string>
+    <string name="lorebook_save_entry_button">Save Entry</string>
+    <string name="lorebook_delete_entry">Delete entry</string>
+    <string name="lorebook_error_name_empty">Lorebook name cannot be empty</string>
+    <string name="lorebook_error_keys_or_content_empty">Keys and content cannot be empty</string>
+    <string name="lorebook_save_settings">Save Book Settings</string>
+    <string name="lorebook_settings_saved">Settings saved</string>
+    <string name="lorebook_default_name">Knowledge Base</string>
+    <string name="lorebook_token_budget_placeholder">500 (default)</string>
+    <string name="lorebook_entry_fallback_key">Key: %1$s</string>
+    <string name="lorebook_entry_fallback_title">Entry #%1$d</string>
+    <string name="lorebook_badge_pos_before">Before char</string>
+    <string name="lorebook_badge_pos_after">After char</string>
+    <string name="lorebook_badge_constant">Constant</string>
+    <string name="lorebook_badge_selective">Selective</string>
+    <string name="lorebook_badge_regex">Regex</string>
+    <string name="lorebook_badge_priority">Priority: %1$d</string>
+    <string name="lorebook_entry_keys_prefix">Keys: %1$s</string>
+    <string name="lorebook_entry_secondary_keys_prefix">Secondary: %1$s</string>
+    <string name="lorebook_entry_keys_section_title">Activation Keys</string>
+    <string name="lorebook_entry_secondary_keys_section_title">Secondary Keys</string>
+    <string name="lorebook_entry_constant_no_keys">Constant entry (always active)</string>
+    <string name="lorebook_edit_entry_action">Edit</string>
+    <string name="lorebook_entry_symbols_count">%1$d chars</string>
+    <string name="lorebook_error_keys_or_constant">Specify at least one key or enable \'Constant\'</string>
+    <string name="lorebook_error_content_empty">Content text cannot be empty</string>
+    <string name="lorebook_error_failed_to_load">Failed to load lorebook</string>
+    <string name="lorebook_error_failed_to_save_entry">Failed to save entry</string>
+    <string name="lorebook_error_failed_to_delete_entry">Failed to delete entry</string>
+    <string name="lorebook_error_failed_to_toggle_entry">Failed to toggle entry</string>
+    <string name="lorebook_error_failed_to_save_settings">Failed to save settings</string>
+    <string name="lorebook_public_label">Public Lorebook</string>
+    <string name="lorebook_public_desc">Make this lorebook accessible for other users in the public catalog</string>
+    <string name="lorebook_readonly_banner">This is an external lorebook (read-only). To edit or add entries, fork it to your library.</string>
+    <string name="lorebook_fork_button">Fork to My Library</string>
+    <string name="lorebook_fork_success">Lorebook copied to your library!</string>
+    <string name="lorebook_error_failed_to_fork">Failed to fork lorebook</string>
+    <string name="character_lorebooks_title">Character Knowledge</string>
+    <string name="character_lorebooks_subtitle">Manage lorebooks and world info active in this character\'s chats</string>
+    <string name="character_lorebooks_empty">No lorebooks attached yet.\nAttach books from your library or create a new one to enrich your character!</string>
+    <string name="character_lorebooks_attach_from_library">From Library</string>
+    <string name="character_lorebooks_create_new">New Book</string>
+    <string name="character_lorebooks_badge_primary">Primary</string>
+    <string name="character_lorebooks_badge_my">My Book</string>
+    <string name="character_lorebooks_badge_public">Public</string>
+    <string name="character_lorebooks_make_primary">Make Primary</string>
+    <string name="character_lorebooks_primary_hint">Primary lorebook is embedded during V3 character export</string>
+    <string name="character_lorebooks_detach">Detach</string>
+    <string name="character_lorebooks_detach_confirm_title">Detach Lorebook?</string>
+    <string name="character_lorebooks_detach_confirm_desc">The book will be detached from this character. It will remain in your library.</string>
+    <string name="character_lorebooks_view_readonly">View (Read-Only)</string>
+    <string name="character_lorebooks_edit">Edit</string>
+    <string name="character_lorebooks_entries_count">%1$d entries</string>
+    <string name="character_lorebooks_library_sheet_title">Attach from Library</string>
+    <string name="character_lorebooks_library_empty">No books in your library.\nCreate a new book first!</string>
+    <string name="character_lorebooks_create_dialog_title">Create Lorebook</string>
+    <string name="character_lorebooks_create_dialog_name_placeholder">Book title</string>
+    <string name="character_lorebooks_create_dialog_desc_placeholder">Description (optional)</string>
+    <string name="character_lorebooks_create_dialog_public_checkbox">Public (available to everyone)</string>
+    <string name="character_lorebooks_create_and_attach">Create &amp; Attach</string>
+    <string name="character_lorebooks_already_attached">Already attached</string>
+    <string name="character_lorebooks_attach_action">Attach</string>
+    <string name="lorebook_import_btn">Import JSON</string>
+    <string name="lorebook_export_btn">Export JSON</string>
+    <string name="lorebook_export_action">Export</string>
+    <string name="lorebook_import_error">Failed to import lorebook</string>
+    <string name="lorebook_export_success_format">Lorebook saved: %1$s</string>
+
+    <!-- Global Lorebooks Screen -->
+    <string name="global_lorebooks_title">Lorebooks</string>
+    <string name="global_lorebooks_tab_catalog">Community Catalog</string>
+    <string name="global_lorebooks_tab_library">My Library</string>
+    <string name="global_lorebooks_search_placeholder">Search lorebooks...</string>
+    <string name="global_lorebooks_empty_catalog">No public lorebooks found</string>
+    <string name="global_lorebooks_empty_search">No lorebooks match your query</string>
+    <string name="global_lorebooks_empty_library">No lorebooks in your library</string>
+    <string name="global_lorebooks_author_format">Author: %1$s</string>
+    <string name="global_lorebooks_author_community">Community</string>
+    <string name="global_lorebooks_badge_my_book">Your book</string>
+    <string name="global_lorebooks_btn_in_library">Saved</string>
+    <string name="global_lorebooks_btn_add_library">Save</string>
+    <string name="global_lorebooks_btn_fork">Fork</string>
+    <string name="global_lorebooks_added_to_library">Book saved to your library</string>
+    <string name="global_lorebooks_removed_from_library">Book removed from your library</string>
+
+    <!-- Lorebook Details Screen -->
+    <string name="lorebook_details_title">Lorebook Details</string>
+    <string name="lorebook_details_entries_title">Lorebook Entries</string>
+    <string name="lorebook_details_no_entries">No entries in this lorebook yet</string>
+    <string name="lorebook_details_menu_report">Report</string>
+    <string name="lorebook_details_menu_delete">Remove from library</string>
+    <string name="lorebook_details_report_sent">Report submitted to moderators</string>
+    <string name="lorebook_details_report_error">Failed to submit report: %1$s</string>
+    <string name="lorebook_details_edit_action">Edit Lorebook</string>
+
+    <!-- Lorebook Cover -->
+    <string name="lorebook_cover_title">Cover Image</string>
+    <string name="lorebook_cover_hint">Choose a book cover (vertical 3:4)</string>
+    <string name="lorebook_cover_change">Change cover</string>
+    <string name="lorebook_cover_upload">Upload cover</string>
+    <string name="lorebook_cover_delete">Remove cover</string>
+    <string name="lorebook_cover_upload_error">Failed to upload cover</string>
+
+    <!-- Character Profile Lorebooks & Prompts -->
+    <string name="character_profile_lorebooks_title">Lorebooks (World Info)</string>
+    <string name="character_profile_lorebooks_manage">Manage lorebooks</string>
+    <string name="character_profile_lorebooks_empty">No lorebooks attached yet</string>
+    <string name="character_profile_badge_canon">Canon</string>
+    <string name="character_profile_badge_user">Your lorebook</string>
+    <string name="character_profile_lorebooks_add">Attach Lorebook</string>
+    <string name="character_profile_detach_lorebook_title">Detach Lorebook?</string>
+    <string name="character_profile_detach_lorebook_desc">The lorebook will no longer affect your dialogue with this character.</string>
+
+    <!-- Add Character Lorebook Stage -->
+    <string name="add_character_lorebook_stage_title">Lorebook</string>
+    <string name="add_character_lorebook_stage_desc">Attach a lorebook from your library or create a new one. This step is optional — you can proceed without it.</string>
+    <string name="add_character_lorebook_not_selected">No lorebook selected</string>
+    <string name="add_character_lorebook_change">Change lorebook</string>
+</resources>
+
+

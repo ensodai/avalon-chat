@@ -1,0 +1,95 @@
+name: Release
+
+on:
+  push:
+    tags:
+      - 'v*'
+  workflow_dispatch:
+    inputs:
+      tag_name:
+        description: 'Release tag (e.g. v1.0.0)'
+        required: true
+        default: 'v1.0.0'
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-release:
+    name: Build & Publish Release
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          distribution: 'temurin'
+          java-version: '21'
+          cache: 'gradle'
+
+      - name: Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+
+      - name: Grant execute permission for scripts & gradlew
+        run: |
+          chmod +x gradlew
+          chmod +x scripts/*.sh
+
+      - name: Configure Android Signing Keystore
+        env:
+          KEYSTORE_BASE64: ${{ secrets.KEYSTORE_BASE64 }}
+          KEYSTORE_PASSWORD: ${{ secrets.KEYSTORE_PASSWORD }}
+          KEY_ALIAS: ${{ secrets.KEY_ALIAS }}
+          KEY_PASSWORD: ${{ secrets.KEY_PASSWORD }}
+        run: |
+          if [ -n "$KEYSTORE_BASE64" ]; then
+            echo "🔑 Decoding release keystore from secrets..."
+            printf "storeFile=avalon-release.jks\nstorePassword=%s\nkeyAlias=%s\nkeyPassword=%s\n" \
+              "$KEYSTORE_PASSWORD" "$KEY_ALIAS" "$KEY_PASSWORD" > keystore.properties
+            echo "✅ keystore.properties configured for production signing."
+          else
+            echo "ℹ️ KEYSTORE_BASE64 secret not detected. Using fallback signing for APK."
+          fi
+
+      - name: Build Server FatJar & Deployment Bundle
+        run: |
+          ./scripts/package-server-bundle.sh
+
+      - name: Build Android Release APK
+        run: |
+          ./gradlew :androidApp:assembleRelease --no-daemon
+          mkdir -p build/release
+          cp androidApp/build/outputs/apk/release/androidApp-release.apk build/release/avalon-chat-android.apk
+
+      - name: Build Web Wasm Distribution
+        run: |
+          ./gradlew :composeApp:wasmJsBrowserDistribution --no-daemon
+          mkdir -p build/release
+          (cd composeApp/build/dist/wasmJs/productionExecutable && zip -r "${GITHUB_WORKSPACE}/build/release/avalon-chat-web-wasm.zip" .)
+
+      - name: Verify Artifacts
+        run: |
+          echo "📦 Created release artifacts:"
+          ls -lh build/release/
+
+      - name: Create & Publish GitHub Release
+        uses: softprops/action-gh-release@v2
+        with:
+          tag_name: ${{ github.event.inputs.tag_name || github.ref_name }}
+          name: Release ${{ github.event.inputs.tag_name || github.ref_name }}
+          draft: false
+          prerelease: false
+          generate_release_notes: true
+          files: |
+            build/release/avalon-chat-server-linux.tar.gz
+            build/release/avalon-chat-web-wasm.zip
+            build/release/avalon-chat-android.apk
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

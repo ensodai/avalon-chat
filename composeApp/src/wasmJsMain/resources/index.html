@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>Avalon Avatars</title>
+    <link href="favicon.ico" rel="icon" type="image/x-icon">
+    <link href="apple-touch-icon.png" rel="icon" sizes="192x192" type="image/png">
+    <link href="apple-touch-icon.png" rel="apple-touch-icon">
+    <link rel="manifest" href="manifest.json">
+    <style>
+        html, body {
+            margin: 0;
+            padding: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+            background: #0B0C10; /* Темный фон */
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        #compose-root {
+            width: 100%;
+            height: 100%;
+            position: relative;
+        }
+
+        /* Убираем возможный белый фон у самого элемента Canvas при его появлении */
+        canvas {
+            background-color: transparent !important;
+            outline: none;
+        }
+
+        /* Контейнер лоадера */
+        .loader-container {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #0B0C10;
+            z-index: 9999;
+            transition: opacity 0.3s ease-out; /* Плавное исчезновение */
+        }
+
+        /* SVG Гексагон */
+        .hex-logo {
+            width: 100px;
+            height: 100px;
+            overflow: visible;
+        }
+
+        .hex-main {
+            fill: none;
+            stroke: #ffffff;
+            stroke-width: 6;
+        }
+
+        .hex-pulse {
+            fill: none;
+            stroke: #ffffff;
+            stroke-width: 2;
+            transform-origin: center;
+            animation: pulse-hex 1.5s cubic-bezier(0.4, 0.0, 0.2, 1) infinite alternate;
+        }
+
+        @keyframes pulse-hex {
+            0% { transform: scale(1); opacity: 0.6; }
+            100% { transform: scale(1.15); opacity: 0; }
+        }
+
+        /* Контейнер предупреждения о дубликате вкладки */
+        .multi-tab-container {
+            position: absolute;
+            top: 0; left: 0; right: 0; bottom: 0;
+            display: none;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background: #0B0C10;
+            z-index: 10000;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 24px;
+            box-sizing: border-box;
+        }
+
+        .multi-tab-card {
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.12);
+            border-radius: 24px;
+            padding: 36px 28px;
+            max-width: 440px;
+            width: 100%;
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .multi-tab-icon {
+            width: 56px;
+            height: 56px;
+            margin-bottom: 20px;
+            color: #FFB703;
+        }
+
+        .multi-tab-title {
+            font-size: 20px;
+            font-weight: 700;
+            margin-bottom: 12px;
+            color: #F8F9FA;
+        }
+
+        .multi-tab-desc {
+            font-size: 14px;
+            line-height: 1.55;
+            color: #A0AAB0;
+            margin-bottom: 28px;
+        }
+
+        .multi-tab-btn {
+            background: linear-gradient(135deg, #6C5CE7 0%, #a29bfe 100%);
+            color: #FFFFFF;
+            border: none;
+            border-radius: 12px;
+            padding: 12px 28px;
+            font-size: 15px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: transform 0.2s, opacity 0.2s;
+            outline: none;
+        }
+
+        .multi-tab-btn:hover {
+            opacity: 0.9;
+            transform: translateY(-1px);
+        }
+
+        .multi-tab-btn:active {
+            transform: translateY(0);
+        }
+    </style>
+</head>
+<body>
+<!-- Лоадер вынесен ВНЕ compose-root, чтобы Compose не удалил его слишком рано -->
+<div id="avalon-html-loader" class="loader-container">
+    <svg class="hex-logo" viewBox="0 0 100 100">
+        <!-- Анимированное эхо -->
+        <polygon class="hex-pulse" points="97,50 73.5,90.7 26.5,90.7 3,50 26.5,9.3 73.5,9.3" />
+        <!-- Основной логотип -->
+        <polygon class="hex-main" points="97,50 73.5,90.7 26.5,90.7 3,50 26.5,9.3 73.5,9.3" />
+    </svg>
+</div>
+
+<!-- Предупреждение об открытой другой вкладке -->
+<div id="avalon-multi-tab-warning" class="multi-tab-container">
+    <div class="multi-tab-card">
+        <svg class="multi-tab-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="3" width="20" height="14" rx="2" ry="2"></rect>
+            <line x1="8" y1="21" x2="16" y2="21"></line>
+            <line x1="12" y1="17" x2="12" y2="21"></line>
+            <path d="M12 7v4"></path>
+            <path d="M12 14h.01"></path>
+        </svg>
+        <div id="multi-tab-title" class="multi-tab-title"></div>
+        <div id="multi-tab-desc" class="multi-tab-desc"></div>
+        <button id="multi-tab-btn" class="multi-tab-btn" onclick="window.location.reload()"></button>
+    </div>
+</div>
+
+<div id="compose-root"></div>
+
+<script>
+(function() {
+    var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+    var isRu = lang.startsWith('ru');
+    var strings = {
+        ru: {
+            title: 'Приложение уже запущено',
+            desc: 'Avalon Avatars открыт в другой вкладке вашего браузера. Чтобы предотвратить повреждение данных, пожалуйста, используйте активную вкладку или закройте её.',
+            btn: 'Обновить страницу'
+        },
+        en: {
+            title: 'Application is already open',
+            desc: 'Avalon Avatars is currently running in another browser tab. To prevent data corruption, please switch to the active tab or close it.',
+            btn: 'Reload Page'
+        }
+    };
+    var currentStrings = isRu ? strings.ru : strings.en;
+
+    function showMultiTabWarning() {
+        var loader = document.getElementById('avalon-html-loader');
+        if (loader) loader.style.display = 'none';
+
+        var titleEl = document.getElementById('multi-tab-title');
+        var descEl = document.getElementById('multi-tab-desc');
+        var btnEl = document.getElementById('multi-tab-btn');
+
+        if (titleEl) titleEl.textContent = currentStrings.title;
+        if (descEl) descEl.textContent = currentStrings.desc;
+        if (btnEl) btnEl.textContent = currentStrings.btn;
+
+        var warning = document.getElementById('avalon-multi-tab-warning');
+        if (warning) warning.style.display = 'flex';
+    }
+
+    function loadComposeApp() {
+        var script = document.createElement('script');
+        script.src = 'composeApp.js';
+        script.type = 'application/javascript';
+        document.body.appendChild(script);
+    }
+
+    if ('locks' in navigator) {
+        navigator.locks.request('avalon_app_single_tab_lock', { ifAvailable: true }, function(lock) {
+            if (!lock) {
+                showMultiTabWarning();
+                return new Promise(function() {}); // Ничего не резолвим, замок занят
+            }
+            loadComposeApp();
+            return new Promise(function() {}); // Удерживаем замок до закрытия вкладки
+        }).catch(function(e) {
+            console.error('Web Locks error:', e);
+            loadComposeApp();
+        });
+    } else {
+        loadComposeApp();
+    }
+})();
+</script>
+</body>
+</html>
