@@ -87,6 +87,14 @@ object EnvProvider {
         return get("TELEGRAM_ADMIN_ID")?.toLongOrNull() ?: 0L
     }
 
+    fun getGoogleClientId(): String {
+        return get("GOOGLE_CLIENT_ID") ?: ""
+    }
+
+    fun getGoogleAndroidClientId(): String {
+        return get("GOOGLE_ANDROID_CLIENT_ID") ?: ""
+    }
+
     fun getGoogleWebClientSecret(): String {
         return get("GOOGLE_WEB_CLIENT_SECRET") ?: ""
     }

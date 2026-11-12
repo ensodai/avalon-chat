@@ -35,7 +35,7 @@ class WebGoogleSignInUseCase(
     private val giftsService: GiftsService,
     private val httpClient: HttpClient
 ) {
-    private val webClientId = "98220617037-7josi11b0ivukm65hpc8rr3f9qgd9215.apps.googleusercontent.com"
+    private val webClientId = EnvProvider.getGoogleClientId()
     private val webClientSecret = EnvProvider.getGoogleWebClientSecret()
 
     private val deviceIdMaxLength = 128
@@ -133,13 +133,12 @@ class WebGoogleSignInUseCase(
         return withContext(Dispatchers.IO) {
             val transport = GoogleNetHttpTransport.newTrustedTransport()
             val jsonFactory = GsonFactory.getDefaultInstance()
+            val audienceList = listOf(
+                webClientId,
+                EnvProvider.getGoogleAndroidClientId()
+            ).filter { it.isNotEmpty() }
             GoogleIdTokenVerifier.Builder(transport, jsonFactory)
-                .setAudience(
-                    listOf(
-                        webClientId,
-                        "98220617037-e5v6ampldneau7iiev44630sit8a2lj3.apps.googleusercontent.com"
-                    )
-                )
+                .setAudience(audienceList)
                 .build()
                 .verify(idTokenString)
         }

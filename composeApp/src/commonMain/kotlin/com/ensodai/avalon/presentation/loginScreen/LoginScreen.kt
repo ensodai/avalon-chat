@@ -239,45 +239,7 @@ fun LoginScreen(
                     )
                 }
 
-                Spacer(modifier = Modifier.height(16.dp))
-
-                Row(
-                    verticalAlignment = Alignment.CenterVertically,
-                    modifier = Modifier.fillMaxWidth()
-                ) {
-                    HorizontalDivider(
-                        modifier = Modifier.weight(1f),
-                        color = colors.textSecondary.copy(alpha = 0.2f)
-                    )
-                    Text(
-                        text = " или ",
-                        color = colors.textSecondary.copy(alpha = 0.5f),
-                        fontSize = 12.sp
-                    )
-                    HorizontalDivider(
-                        modifier = Modifier.weight(1f),
-                        color = colors.textSecondary.copy(alpha = 0.2f)
-                    )
-                }
-
-                Spacer(modifier = Modifier.height(16.dp))
-
-                SmartGoogleSignInButton(
-                    onSignInGoogleToken = { token ->
-                        actions.onGoogleSignInSuccess(token)
-                    },
-                    onDismiss = {
-                        L.d("LoginScreen", "Google Sign-In dismissed")
-                    },
-                    onError = { exception ->
-                        L.e(
-                            "LoginScreen",
-                            "Google Sign-In failed: ${exception.stackTraceToString()}"
-                        )
-                    }
-                )
-
-                Spacer(modifier = Modifier.height(32.dp))
+                Spacer(modifier = Modifier.height(24.dp))
             }
 
             Box(

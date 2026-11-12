@@ -5,6 +5,7 @@ import com.ensodai.shared.avalon.auth.models.AuthResponse
 import com.ensodai.shared.avalon.auth.models.GoogleAuthRequest
 import app.data.repository.UserRepositoryApp
 import app.data.repository.SessionRepository
+import app.utils.EnvProvider
 import app.plugins.generateAccessToken
 import app.service.GiftsService
 import com.google.api.client.googleapis.auth.oauth2.GoogleIdToken
@@ -34,15 +35,13 @@ class GoogleSignInUseCase(
             val transport = GoogleNetHttpTransport.newTrustedTransport()
             val jsonFactory = GsonFactory.getDefaultInstance()
 
+            val audienceList = listOf(
+                EnvProvider.getGoogleClientId(),
+                EnvProvider.getGoogleAndroidClientId()
+            ).filter { it.isNotEmpty() }
+
             val verifier = GoogleIdTokenVerifier.Builder(transport, jsonFactory)
-                .setAudience(
-                    listOf(
-                        // 1. Web Client ID
-                        "98220617037-7josi11b0ivukm65hpc8rr3f9qgd9215.apps.googleusercontent.com",
-                        // 2. Android Client ID
-                        "98220617037-e5v6ampldneau7iiev44630sit8a2lj3.apps.googleusercontent.com"
-                    )
-                )
+                .setAudience(audienceList)
                 .build()
 
             val idToken: GoogleIdToken? = verifier.verify(authRequest.idToken)

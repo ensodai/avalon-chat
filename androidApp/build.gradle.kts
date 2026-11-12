@@ -134,7 +134,7 @@ configure<ApplicationExtension> {
         multiDexEnabled = true
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
         manifestPlaceholders["appAuthRedirectScheme"] =
-            "com.googleusercontent.apps.98220617037-e5v6ampldneau7iiev44630sit8a2lj3"
+            "com.googleusercontent.apps.placeholder"
     }
 
     signingConfigs {

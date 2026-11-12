@@ -26,12 +26,9 @@ import kotlin.coroutines.suspendCoroutine
 import kotlin.uuid.Uuid
 
 class HybridGoogleAuth(private val context: Context) {
-    private val webClientId =
-        "98220617037-7josi11b0ivukm65hpc8rr3f9qgd9215.apps.googleusercontent.com"
-    private val androidClientId =
-        "98220617037-e5v6ampldneau7iiev44630sit8a2lj3.apps.googleusercontent.com"
-    private val redirectUri =
-        "com.googleusercontent.apps.98220617037-e5v6ampldneau7iiev44630sit8a2lj3:/oauth2redirect".toUri()
+    private val webClientId = ""
+    private val androidClientId = ""
+    private val redirectUri = "".toUri()
 
     private val credentialManager = CredentialManager.create(context)
     private val authService = AuthorizationService(context)

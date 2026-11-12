@@ -18,16 +18,18 @@ actual fun SmartGoogleSignInButton(
         modifier = modifier,
         enabled = true,
         onClick = {
-            val clientId = "98220617037-7josi11b0ivukm65hpc8rr3f9qgd9215.apps.googleusercontent.com"
-            val redirectUri = "${window.location.origin}/"
-            val authUrl = "https://accounts.google.com/o/oauth2/v2/auth" +
-                    "?client_id=$clientId" +
-                    "&redirect_uri=${encodeURIComponent(redirectUri)}" +
-                    "&response_type=code" +
-                    "&scope=openid%20email%20profile" +
-                    "&access_type=offline"
+            val clientId = ""
+            if (clientId.isNotEmpty()) {
+                val redirectUri = "${window.location.origin}/"
+                val authUrl = "https://accounts.google.com/o/oauth2/v2/auth" +
+                        "?client_id=$clientId" +
+                        "&redirect_uri=${encodeURIComponent(redirectUri)}" +
+                        "&response_type=code" +
+                        "&scope=openid%20email%20profile" +
+                        "&access_type=offline"
 
-            window.location.href = authUrl
+                window.location.href = authUrl
+            }
         }
     )
 }

@@ -195,7 +195,7 @@
     <string name="system_message_authorization_bad">❌Something went wrong. Check your details and try again.</string>
     <string name="system_message_authorization_seccess">✅Login was successful. The character is now available for your questions and discussions.</string>
 
-    <string name="serverClientId" translatable="false">98220617037-7josi11b0ivukm65hpc8rr3f9qgd9215.apps.googleusercontent.com</string>
+    <string name="serverClientId" translatable="false"></string>
 
     <string name="stage_one">Choose the AI character\'s name</string>
     <string name="description">Description</string>
